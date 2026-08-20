@@ -47,6 +47,19 @@
       upgrade-insecure-requests"""
 
 # ---------------------------------------------------------------------------
+# Canonical host
+# ---------------------------------------------------------------------------
+# bodybelongingclinic.netlify.app serves the full site. The canonical tag already
+# points at www, so Google consolidates correctly, but a 301 is cleaner: it stops
+# the Netlify subdomain competing in search and keeps one address for the clinic.
+
+[[redirects]]
+  from = "https://bodybelongingclinic.netlify.app/*"
+  to = "https://www.bodybelongingclinic.com.au/:splat"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------
 # Caching
 # ---------------------------------------------------------------------------
 # Assets are referenced by stable filenames, so cache them hard but allow
