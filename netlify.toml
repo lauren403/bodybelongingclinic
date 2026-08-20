@@ -14,7 +14,13 @@
 # Content-Security-Policy is deliberately set to REPORT-ONLY for now. It is
 # scoped to the third parties the site actually uses (Google Fonts, GA/GTM,
 # Microsoft Clarity, MailerLite forms, Zanda booking, Instagram embeds).
-# Watch the browser console for violations for a couple of weeks, then rename
+# Verified against real traffic 20 Aug 2026. What the site actually loads:
+#   scripts.clarity.ms + www.clarity.ms + v.clarity.ms  (Microsoft Clarity)
+#   www.googletagmanager.com                            (GA4 G-EKE17QFG2S)
+#   connect.facebook.net + www.facebook.com/tr          (Meta pixel)
+#   fonts.googleapis.com + fonts.gstatic.com            (webfonts)
+#   clientportal.zandahealth.com                        (booking iframe)
+# All are allowed above. Watch the console for a couple of weeks, then rename
 # the header to Content-Security-Policy to enforce it.
 
 [[headers]]
@@ -35,8 +41,8 @@
       img-src 'self' data: https:; \
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; \
       font-src 'self' https://fonts.gstatic.com data:; \
-      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://connect.facebook.net https://preview.mailerlite.io; \
-      connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://preview.mailerlite.io; \
+      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.clarity.ms https://connect.facebook.net https://preview.mailerlite.io; \
+      connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://www.facebook.com https://connect.facebook.net https://preview.mailerlite.io; \
       frame-src https://clientportal.zandahealth.com https://www.instagram.com https://www.google.com; \
       upgrade-insecure-requests"""
 
