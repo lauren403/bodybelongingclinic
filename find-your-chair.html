@@ -144,7 +144,7 @@
           <div class="fyc-opts">
             <button class="fyc-opt" data-q="start" data-v="intro_call"><span class="k">1</span><span class="txt"><b>Just a quick chat first</b><span>A free 15-minute call to ask questions. No cost, no referral, nothing to sort out beforehand.</span></span></button>
             <button class="fyc-opt" data-q="start" data-v="quick_chair"><span class="k">2</span><span class="txt"><b>A short session</b><span>A 20-minute Quick Chair by telehealth &mdash; bulk-billed if you have a Medicare plan and referral. Arranged with us, not booked online.</span></span></button>
-            <button class="fyc-opt" data-q="start" data-v="full_session"><span class="k">3</span><span class="txt"><b>A proper first session</b><span>A full 50 minutes to bring the whole story.</span></span></button>
+            <button class="fyc-opt" data-q="start" data-v="full_session"><span class="k">3</span><span class="txt"><b>A proper first session</b><span>A full 60 minutes to bring the whole story.</span></span></button>
             <button class="fyc-opt" data-q="start" data-v="read_first"><span class="k">4</span><span class="txt"><b>I&rsquo;d like to read a bit first</b><span>No booking yet. Just show me where to look.</span></span></button>
           </div>
         </div>
@@ -354,9 +354,9 @@
         actions = btn('contact.html','Ask about a Quick Chair &rarr;') + btn(bookUrl('intro_call'),'Or book the free intro call','ghost',true);
         note = 'The Quick Chair is <strong>bulk-billed for eligible clients who have a Mental Health Treatment Plan and a current referral</strong> from a GP &mdash; so there&rsquo;s nothing to pay. Because it depends on your Medicare plan, we arrange it with you rather than have you book it online &mdash; that way nobody gets a surprise. <strong>Don&rsquo;t have a plan yet?</strong> That&rsquo;s completely normal. Start with the free intro call and we&rsquo;ll help you sort the referral.';
       } else {
-        stepLine = 'Your next step: a first session &mdash; a full 50 minutes to bring the whole story.';
+        stepLine = 'Your next step: a first session &mdash; a full 60 minutes to bring the whole story.';
         actions = btn(bookUrl('full_session'),'Book a first session &rarr;','',true) + btn(t.page,'First, read about this pathway','ghost');
-        note = pick('full_session','an initial 50-minute session') + 'A 50-minute session is $200. With a GP Mental Health Treatment Plan, eligible clients get around $89.50 back from Medicare (the current rebate) &mdash; around $110 out of pocket. Under an Eating Disorder Plan, up to 40 rebated sessions a year may be available. <a class="more-link" href="offerings.html">Full fees and Medicare details &rarr;</a>';
+        note = pick('full_session','an initial 60-minute session') + 'A 55-minute session is $200. With a GP Mental Health Treatment Plan, eligible clients get around $89.50 back from Medicare (the current rebate) &mdash; around $110 out of pocket. Under an Eating Disorder Plan, up to 40 rebated sessions a year may be available. <a class="more-link" href="offerings.html">Full fees and Medicare details &rarr;</a>';
       }
 
       if(mode === 'telehealth'){ body += ' Telehealth is available right across Australia.'; }
