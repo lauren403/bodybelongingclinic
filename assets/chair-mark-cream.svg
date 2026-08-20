@@ -1,0 +1,10 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Body Belonging Clinic">
+  <g fill="#F5ECDA">
+    <rect x="30" y="18" width="40" height="44" rx="13"/>
+    <rect x="18" y="40" width="16" height="33" rx="8"/>
+    <rect x="66" y="40" width="16" height="33" rx="8"/>
+    <rect x="29" y="71" width="9" height="15" rx="3.5"/>
+    <rect x="62" y="71" width="9" height="15" rx="3.5"/>
+  </g>
+  <rect x="26" y="52" width="48" height="20" rx="9" fill="#C8623C"/>
+</svg>
