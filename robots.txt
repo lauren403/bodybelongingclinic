@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.bodybelongingclinic.com.au/sitemap.xml
+# AI summary file: https://www.bodybelongingclinic.com.au/llms.txt
