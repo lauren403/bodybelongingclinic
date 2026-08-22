@@ -265,9 +265,9 @@
   --------------------------------------------------------------- */
   var GENERIC = 'https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking';
   var LINKS = {
-    intro_call:   GENERIC,  // ← paste "Free 15-minute intro call" booking link
-    quick_chair:  GENERIC,  // ← paste "Quick Chair – 20 min" booking link
-    full_session: GENERIC,  // ← paste "Individual therapy session (50 min)" booking link
+    intro_call:   GENERIC,  // Zanda cannot pre-select a service from a link (per Zanda support docs), so pick() names the service instead. Labels below MUST match the service names in the client portal exactly.
+    quick_chair:  GENERIC,  // Zanda cannot pre-select a service from a link (per Zanda support docs), so pick() names the service instead. Labels below MUST match the service names in the client portal exactly.
+    full_session: GENERIC,  // Zanda cannot pre-select a service from a link (per Zanda support docs), so pick() names the service instead. Labels below MUST match the service names in the client portal exactly.
     generic:      GENERIC
   };
   function bookUrl(k){ return LINKS[k] || GENERIC; }
@@ -356,7 +356,7 @@
       } else {
         stepLine = 'Your next step: a first session &mdash; a full 60 minutes to bring the whole story.';
         actions = btn(bookUrl('full_session'),'Book a first session &rarr;','',true) + btn(t.page,'First, read about this pathway','ghost');
-        note = pick('full_session','an initial 60-minute session') + 'A 55-minute session is $200. With a GP Mental Health Treatment Plan, eligible clients get around $89.50 back from Medicare (the current rebate) &mdash; around $110 out of pocket. Under an Eating Disorder Plan, up to 40 rebated sessions a year may be available. <a class="more-link" href="offerings.html">Full fees and Medicare details &rarr;</a>';
+        note = pick('full_session','Individual therapy — first session') + 'A 55-minute session is $200. With a GP Mental Health Treatment Plan, eligible clients get around $89.50 back from Medicare (the current rebate) &mdash; around $110 out of pocket. Under an Eating Disorder Plan, up to 40 rebated sessions a year may be available. <a class="more-link" href="offerings.html">Full fees and Medicare details &rarr;</a>';
       }
 
       if(mode === 'telehealth'){ body += ' Telehealth is available right across Australia.'; }
