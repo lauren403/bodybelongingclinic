@@ -53,6 +53,21 @@
 # points at www, so Google consolidates correctly, but a 301 is cleaner: it stops
 # the Netlify subdomain competing in search and keeps one address for the clinic.
 
+# /fees is the URL people type and the one that goes in an email signature, but the
+# fees content lives on /offerings. Send it there rather than 404.
+
+[[redirects]]
+  from = "/fees"
+  to = "/offerings.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fees.html"
+  to = "/offerings.html"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://bodybelongingclinic.netlify.app/*"
   to = "https://www.bodybelongingclinic.com.au/:splat"
