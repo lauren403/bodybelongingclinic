@@ -638,13 +638,13 @@ p,.lede,.lede-2,.hero .lede,.hero-cine .lede{text-wrap:pretty}
    are largely preserved; light "cream" surfaces are re-tuned.
    ============================================================ */
 :root[data-theme="dark"]{
-  --cream:#17100B; --cream-2:#1C130D; --cream-3:#150E08;
+    
   --muted:#B8A587; --line:rgba(214,166,124,.16); --line-light:rgba(214,166,124,.14);
 }
 :root[data-theme="dark"] body{background:#17100B;color:#EADECA}
 :root[data-theme="dark"] h1,:root[data-theme="dark"] h2,:root[data-theme="dark"] h3{color:#F3EAD9}
 :root[data-theme="dark"] .band.cream,:root[data-theme="dark"] .band.cream-2,
-:root[data-theme="dark"] .band.cream-3,:root[data-theme="dark"] .ig-band{background:var(--cream);color:#E7DAC5}
+:root[data-theme="dark"] .band.cream-3,:root[data-theme="dark"] .ig-band{background:#17100B;color:#E7DAC5}
 /* elevated surfaces */
 :root[data-theme="dark"] .p-card,
 :root[data-theme="dark"] .band.cream .p-card,:root[data-theme="dark"] .band.cream-2 .p-card,
@@ -907,3 +907,8 @@ a.foot-line:hover{color:var(--copper-soft);opacity:1}
 .cred-logos li{background:#fff;border:1px solid rgba(36,22,17,.08);border-radius:14px;padding:12px 16px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(36,22,17,.05);min-width:116px}
 .cred-logos img{height:54px;width:auto;max-width:130px;object-fit:contain;display:block}
 @media(max-width:560px){.cred-logos img{height:44px}.cred-logos li{min-width:0;padding:10px 12px}}
+
+
+/* Dark mode: .sticky-book uses --cream as a surface, which no longer flips.
+   Pin it so the mobile booking bar stays dark. */
+:root[data-theme="dark"] .sticky-book{background:#2A1A12;color:#F3EAD9}
