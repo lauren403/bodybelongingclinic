@@ -238,7 +238,7 @@ section{position:relative}
 .brand-art.photo>*{position:relative;z-index:1}
 .brand-art.photo .chair{filter:drop-shadow(0 4px 14px rgba(0,0,0,.45))}
 .brand-art.photo .script{text-shadow:0 2px 16px rgba(0,0,0,.5)}
-.figure-card{aspect-ratio:4/5;border-radius:var(--rl);background:center/cover no-repeat;border:1px solid var(--line);box-shadow:0 30px 70px rgba(42,22,32,.18)}
+.figure-card{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:4/5;border-radius:var(--rl);background:center/cover no-repeat;border:1px solid var(--line);box-shadow:0 30px 70px rgba(42,22,32,.18)}
 .figure-card.tall{aspect-ratio:3/4}
 
 /* chair line-mark */
