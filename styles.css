@@ -933,10 +933,11 @@ a.foot-line:hover{color:var(--copper-soft);opacity:1}
    usages only; every terracotta background, button and large heading is
    left exactly as it is. */
 :root:not([data-theme="dark"]) .banner-pill,
-:root:not([data-theme="dark"]) .step .n{color:#8A4B2A}
-/* On the dark bands the same ink has to go lighter, not darker. */
-:root:not([data-theme="dark"]) .band.taupe .banner-pill,
-:root:not([data-theme="dark"]) .band.espresso .banner-pill,
-:root:not([data-theme="dark"]) .band.espresso .more-link{color:var(--copper-soft)}
+:root:not([data-theme="dark"]) .step .n,
+:root:not([data-theme="dark"]) .fyc-escape a{color:#8A4B2A}
+/* On the dark bands that same ink has to go lighter, not darker -
+   except inside .p-card, which stays white on those bands. */
+:root:not([data-theme="dark"]) :is(.band.coral,.band.blue,.band.espresso,.band.terracotta,.band.taupe) :is(.banner-pill,.more-link,.n){color:var(--copper-soft)}
+:root:not([data-theme="dark"]) :is(.band.coral,.band.blue,.band.espresso,.band.terracotta,.band.taupe) .p-card :is(.banner-pill,.more-link,.n){color:#8A4B2A}
 /* Coral on cream-3 is 2.69:1 even at display size. */
 :root:not([data-theme="dark"]) .ig-band :is(h1,h2,h3) em{color:var(--terracotta)}
