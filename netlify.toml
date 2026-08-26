@@ -77,14 +77,16 @@
 # ---------------------------------------------------------------------------
 # Caching
 # ---------------------------------------------------------------------------
-# Assets are referenced by stable filenames, so cache them hard but allow
-# revalidation. HTML must always revalidate so content edits go live at once.
+# Asset filenames are stable and NOT content-hashed, so the TTL is deliberately
+# short. A long TTL here is a trap: in Aug 2026 eleven photos were missing for two
+# days, the edge cached those 404s, and they kept being served long after the files
+# were restored. One day plus stale-while-revalidate means a replaced photo — or a
+# cached miss — heals on its own. HTML always revalidates so copy edits go live at once.
 
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800, must-revalidate"
-
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
 [[headers]]
   for = "/*.html"
   [headers.values]
