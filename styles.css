@@ -266,7 +266,7 @@ section{position:relative}
 .p-card .tag{display:block;margin:1.2rem 0 .5rem;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700;color:var(--rust)}
 .p-card h3{font-size:1.55rem;margin-bottom:.6rem;line-height:1.05;letter-spacing:-.01em}
 .p-card p{font-size:1rem;opacity:.86;max-width:none}
-.p-card .cover{display:block;width:calc(100% + 60px);margin:-34px -30px 22px;aspect-ratio:8/5;object-fit:cover;border-bottom:1px solid var(--line)}
+.p-card .cover{display:block;width:calc(100% + 60px);max-width:none;margin:-34px -30px 22px;aspect-ratio:8/5;object-fit:cover;border-bottom:1px solid var(--line)}
 .p-card.feature .cover{margin-top:-37px}
 .more-link{display:inline-flex;align-items:center;gap:.4em;margin-top:2.2rem;font-weight:700;text-decoration:none;border-bottom:2px solid var(--terracotta);padding-bottom:3px}
 .more-link:hover{color:var(--coral)}
