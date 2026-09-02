@@ -68,6 +68,29 @@
   status = 301
   force = true
 
+# /book is printed in the email signature — "Book a session:
+# bodybelongingclinic.com.au/book" — and has been a hard 404 on every email the
+# clinic has sent. Nothing in this repo links to it, so it was invisible on-site.
+#
+# It goes to /offerings rather than straight to the Zanda portal on purpose. The
+# GA4 booking_click event fires from a listener on this site, on any click of a
+# zandahealth.com link; jumping straight to Zanda would send people off to book
+# while making those bookings invisible in analytics — the exact attribution the
+# paid-search test depends on. /offerings carries five booking links and the fee
+# table. /booking is the other URL people type.
+  
+[[redirects]]
+  from = "/book"
+  to = "/offerings"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "/booking"
+  to = "/offerings"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://bodybelongingclinic.netlify.app/*"
   to = "https://www.bodybelongingclinic.com.au/:splat"
