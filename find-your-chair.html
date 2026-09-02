@@ -131,9 +131,9 @@
           <button class="fyc-back" data-back>&larr; Back</button>
           <p class="banner-pill">Question 3 of 4</p>
           <h2 class="fyc-q">Where would you rather <em>sit?</em></h2>
-          <p class="fyc-hint">Telehealth now, and the Nedlands room from November 2026. Tell me which suits you.</p>
+          <p class="fyc-hint">Telehealth now, and the Nedlands room in Perth. Tell me which suits you.</p>
           <div class="fyc-opts">
-            <button class="fyc-opt" data-q="mode" data-v="in_person"><span class="k">1</span><span class="txt"><b>In the room, in Nedlands</b><span>Perth &mdash; in-person sessions start November 2026.</span></span></button>
+            <button class="fyc-opt" data-q="mode" data-v="in_person"><span class="k">1</span><span class="txt"><b>In the room, in Nedlands</b><span>Perth &mdash; in-person times are arranged with the clinic.</span></span></button>
             <button class="fyc-opt" data-q="mode" data-v="telehealth"><span class="k">2</span><span class="txt"><b>Online, from wherever I am</b><span>Telehealth, anywhere in Australia.</span></span></button>
             <button class="fyc-opt" data-q="mode" data-v="either"><span class="k">3</span><span class="txt"><b>Either &mdash; whatever&rsquo;s easiest</b><span>We can work it out together.</span></span></button>
           </div>
@@ -365,7 +365,7 @@
       }
 
       if(mode === 'telehealth'){ body += ' Telehealth is available right across Australia.'; }
-      else if(mode === 'in_person'){ body += ' In person, that&rsquo;s the terracotta chair in Nedlands, from November 2026. Until then we&rsquo;d meet by telehealth.'; }
+      else if(mode === 'in_person'){ body += ' In person, that&rsquo;s the terracotta chair in Nedlands, arranged with the clinic.'; }
     }
 
     document.getElementById('fycTitle').innerHTML = title;
