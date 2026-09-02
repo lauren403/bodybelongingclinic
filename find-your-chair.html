@@ -6,7 +6,7 @@
 <script>(function(){try{var t=localStorage.getItem("bbc-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 <title>Find your chair | Body Belonging Clinic</title>
 <meta content="A gentle few questions to help you find the right place to start at Body Belonging Clinic. Not an assessment. No wrong answers." name="description"/>
-<link href="https://www.bodybelongingclinic.com.au/find-your-chair.html" rel="canonical"/>
+<link href="https://www.bodybelongingclinic.com.au/find-your-chair" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Body Belonging Clinic" property="og:site_name"/>
 <meta content="Find your chair | Body Belonging Clinic" property="og:title"/>
@@ -59,9 +59,9 @@
 .fyc-safety strong{font-family:var(--label);letter-spacing:.04em;text-transform:uppercase;font-size:.76rem;display:block;margin-bottom:.35rem;opacity:.75}
 .fyc-safety p{margin:0;opacity:.85}
 </style>
-<meta content="https://www.bodybelongingclinic.com.au/find-your-chair.html" property="og:url"/>
+<meta content="https://www.bodybelongingclinic.com.au/find-your-chair" property="og:url"/>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Find your chair | Body Belonging Clinic","description":"A gentle few questions to help you find the right place to start at Body Belonging Clinic. Not an assessment. No wrong answers.","url":"https://www.bodybelongingclinic.com.au/find-your-chair.html","isPartOf":{"@type":"WebSite","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"},"publisher":{"@type":"MedicalBusiness","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"}}
+{"@context":"https://schema.org","@type":"WebPage","name":"Find your chair | Body Belonging Clinic","description":"A gentle few questions to help you find the right place to start at Body Belonging Clinic. Not an assessment. No wrong answers.","url":"https://www.bodybelongingclinic.com.au/find-your-chair","isPartOf":{"@type":"WebSite","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"},"publisher":{"@type":"MedicalBusiness","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"}}
 </script>
 </head>
 <body>
@@ -356,12 +356,12 @@
         note = pick('intro_call','Free 15-minute intro call') + 'It&rsquo;s a short call to ask questions and get a feel for the room. You don&rsquo;t need a Medicare plan, a referral, or a tidy explanation &mdash; and you&rsquo;re not committing to anything by having it.';
       } else if(start === 'quick_chair'){
         stepLine = 'Your next step: ask us about a Quick Chair &mdash; a short 25-minute telehealth session.';
-        actions = btn('contact.html','Ask about a Quick Chair &rarr;') + btn(bookUrl('intro_call'),'Or book the free intro call','ghost',true);
+        actions = btn('/contact','Ask about a Quick Chair &rarr;') + btn(bookUrl('intro_call'),'Or book the free intro call','ghost',true);
         note = 'The Quick Chair is <strong>bulk-billed for eligible clients who have a Mental Health Treatment Plan and a current referral</strong> from a GP &mdash; so there&rsquo;s nothing to pay. Because it depends on your Medicare plan, we arrange it with you rather than have you book it online &mdash; that way nobody gets a surprise. <strong>Don&rsquo;t have a plan yet?</strong> That&rsquo;s completely normal. Start with the free intro call and we&rsquo;ll help you sort the referral.';
       } else {
         stepLine = 'Your next step: a first session &mdash; a full 60 minutes to bring the whole story.';
         actions = btn(bookUrl('full_session'),'Book a first session &rarr;','',true) + btn(t.page,'First, read about this pathway','ghost');
-        note = pick('full_session','Individual therapy — first session') + 'A 55-minute session is $200. With a GP Mental Health Treatment Plan, eligible clients get around $89.50 back from Medicare (the current rebate) &mdash; around $110 out of pocket. Under an Eating Disorder Plan, up to 40 rebated sessions a year may be available. <a class="more-link" href="offerings.html">Full fees and Medicare details &rarr;</a>';
+        note = pick('full_session','Individual therapy — first session') + 'A 60-minute first session is $200. With a GP Mental Health Treatment Plan, eligible clients get around $89.50 back from Medicare (the current rebate) &mdash; around $110 out of pocket. Under an Eating Disorder Plan, up to 40 rebated sessions a year may be available. <a class="more-link" href="/offerings">Full fees and Medicare details &rarr;</a>';
       }
 
       if(mode === 'telehealth'){ body += ' Telehealth is available right across Australia.'; }
