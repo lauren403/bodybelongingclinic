@@ -58,13 +58,13 @@
 
 [[redirects]]
   from = "/fees"
-  to = "/offerings.html"
+  to = "/offerings"
   status = 301
   force = true
 
 [[redirects]]
   from = "/fees.html"
-  to = "/offerings.html"
+  to = "/offerings"
   status = 301
   force = true
 
