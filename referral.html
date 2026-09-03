@@ -59,7 +59,7 @@
   <div class="wrap">
     <p style="max-width:680px;margin:0 0 1.8rem">Fill in a few details and we’ll reply by your preferred contact method. A brief, general note is all we need here. There’s no need to share detailed health information at this stage. If you’d rather, you can <a class="more-link" href="mailto:admin@bodybelongingclinic.com.au?subject=Body%20Belonging%20Clinic%20enquiry">email the clinic</a>, and clients ready to book can <a class="more-link" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">book online</a>.</p>
 
-    <form action='/referral-thank-you' class='form' data-netlify="true" netlify-honeypot="bot-field" method='POST' name='enquiry' onsubmit='try{gtag(\'event\','generate_lead\',{form:\'enquiry\'})}catch(e){}'>
+    <form action='/referral-thank-you' class='form' data-netlify="true" netlify-honeypot="bot-field" method='POST' name='enquiry' onsubmit="try{gtag('event','generate_lead',{form:'enquiry'})}catch(e){}">
       <input type="hidden" name="form-name" value="enquiry"/>
       <p class="hp"><label>Leave this field empty: <input name="bot-field"/></label></p>
 

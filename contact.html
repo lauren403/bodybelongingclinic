@@ -75,10 +75,10 @@
       <p><strong>Email:</strong> <a class="more-link" href="mailto:admin@bodybelongingclinic.com.au?subject=Body%20Belonging%20Clinic%20enquiry">admin@bodybelongingclinic.com.au</a></p>
       <p style="margin-top:.4rem"><strong>Phone:</strong> <a class="more-link" href="tel:+61493117185">0493 117 185</a>. Call or text, and if we’re in session we’ll get back to you.</p>
       <p style="margin-top:.4rem"><strong>Where:</strong> Telehealth across Australia &middot; in-person sessions in Nedlands, Perth WA. Your video link is sent when your appointment is confirmed. <a class="more-link" href="https://www.google.com/maps?cid=966026174899158343" rel="noopener" target="_blank">Find us on Google &rarr;</a></p>
-      <p class="form-note" style="margin-top:.5rem">We usually reply within 2 business days, and welcome new clients in small intakes so everyone gets proper time. If a spot isn’t free right away, we’ll offer you the waitlist and an honest timeframe. You won’t be left wondering. <span class="avail" style="margin-left:.4rem;vertical-align:middle"><span class="dot" aria-hidden="true"></span> Now welcoming new clients</span></p>
+      <p class="form-note" style="margin-top:.5rem">We reply within one business day, and welcome new clients in small intakes so everyone gets proper time. If a spot isn’t free right away, we’ll offer you the waitlist and an honest timeframe. You won’t be left wondering. <span class="avail" style="margin-left:.4rem;vertical-align:middle"><span class="dot" aria-hidden="true"></span> Now welcoming new clients</span></p>
       <div class="actions-row">
         <a class="pill" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a session &rarr;</a>
-        <a class="pill ghost" href="mailto:admin@bodybelongingclinic.com.au?subject=Body%20Belonging%20Clinic%20enquiry">Email the clinic</a>
+        <a class="pill ghost" href="#enquiry">Send a note &rarr;</a>
       </div>
     </div>
     <img class="figure-card" src="/.netlify/images?url=/assets/founder-smile.jpg&amp;w=1000&amp;fm=webp&amp;q=75" alt="Lauren Lynch (she/her), founder of Body Belonging Clinic, smiling with a cup of tea" decoding="async">
@@ -99,6 +99,62 @@
       <iframe src="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" title="Book an appointment with Body Belonging Clinic" allow="payment" loading="lazy"></iframe>
     </div>
     <p class="form-note">Prefer a full-screen view? <a class="more-link" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Open the booking page directly &rarr;</a></p>
+  </div>
+</section>
+
+<section class="band cream" id="enquiry">
+  <div class="wrap">
+    <div class="section-head"><p><span class="banner-pill ochre">Send a note</span></p><h2>Or write to us <em>here.</em></h2><p class="lede-2" style="max-width:56ch">A few lines is plenty. If you&rsquo;d rather not open your email, this reaches the same inbox.</p></div>
+  <form action='/referral-thank-you' class='form' data-netlify="true" netlify-honeypot="bot-field" method='POST' name='enquiry-contact' onsubmit="try{gtag('event','generate_lead',{form:'enquiry-contact'})}catch(e){}">
+        <input type="hidden" name="form-name" value="enquiry-contact"/>
+        <p class="hp"><label>Leave this field empty: <input name="bot-field"/></label></p>
+
+        <fieldset>
+          <legend>Who is getting in touch? *</legend>
+          <label class="check"><input type="radio" name="role" value="Prospective client" required/> I am a prospective client</label>
+          <label class="check"><input type="radio" name="role" value="Family or carer"/> I am a family member or carer</label>
+          <label class="check"><input type="radio" name="role" value="Referring professional"/> I am a referring professional</label>
+        </fieldset>
+
+        <div><label for="name">Your name *</label><input id="name" name="name" type="text" autocomplete="name" required/></div>
+        <div><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required/></div>
+        <div><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"/></div>
+        <div><label for="location">Your location / state (for telehealth)</label><input id="location" name="location" type="text" placeholder="e.g. Perth WA, or NSW"/></div>
+        <div><label for="contact-pref">Best way and time to reach you</label><input id="contact-pref" name="contact_preference" type="text" placeholder="e.g. email any time, or phone after 3pm"/></div>
+        <div><label for="heard">How did you hear about us? (optional)</label><input id="heard" name="heard_about" type="text" placeholder="e.g. GP, Instagram, Psychology Today, a friend"/></div>
+
+        <div>
+          <label for="message">What are you reaching out about? *</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <p class="form-note">A short, general note is perfect, such as the kind of support you’re looking for. Please don’t include detailed health, clinical or sensitive information here. We’ll gather anything we need securely once we’re in touch.</p>
+        </div>
+
+        <fieldset>
+          <legend>If you’re a referring professional (optional)</legend>
+          <p class="form-note" style="margin-top:0">Only complete this part if you’re referring someone. Please confirm the person has consented to this contact, and keep clinical detail out of this form. Full referral information can follow by secure email.</p>
+          <div><label for="profession">Your profession / organisation</label><input id="profession" name="referrer_profession" type="text" placeholder="e.g. GP, dietitian, paediatrician"/></div>
+          <div style="margin-top:1rem"><label for="client-initials">Client’s first name or initials</label><input id="client-initials" name="client_initials" type="text"/></div>
+          <div style="margin-top:1rem"><label for="pathway">Likely referral pathway</label>
+            <select id="pathway" name="referral_pathway">
+              <option>Not sure / to discuss</option>
+              <option>GP Mental Health Treatment Plan (Better Access)</option>
+              <option>Eating Disorder Plan (EDP)</option>
+              <option>Psychiatrist or paediatrician referral</option>
+              <option>Self-referral / private</option>
+            </select>
+          </div>
+          <label class="check" style="margin-top:1rem"><input type="checkbox" name="referrer_consent" value="Confirmed client consent to contact"/> I confirm the person has consented to this contact</label>
+        </fieldset>
+
+        <label class="check"><input id="privacy-consent" name="privacy_consent" type="checkbox" value="Agreed" required/> I have read the privacy note below and understand not to share detailed health or sensitive information through this form. *</label>
+
+        <button class="pill" type="submit">Send securely &rarr;</button>
+      </form>
+
+    <div class="note cream" style="margin-top:2rem;max-width:760px">
+      <h2 style="font-family:var(--serif);font-size:1.4rem;margin:0 0 .6rem">How your information is handled</h2>
+      <p style="margin:0">This form is for first contact only. We deliberately keep it to brief, general details so that sensitive health information isn’t shared through a website form. Submissions are transmitted over a secure connection and handled only by the clinic. Once we’re in touch, any clinical or personal information needed for your care is collected through our secure practice system (Zanda), in line with the Australian Privacy Principles and our <a class='more-link' href='/privacy'>Privacy policy</a>. If you’d prefer not to use this form, email <a class="more-link" href="mailto:admin@bodybelongingclinic.com.au">admin@bodybelongingclinic.com.au</a>.</p>
+    </div>
   </div>
 </section>
 
