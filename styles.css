@@ -949,3 +949,8 @@ a.foot-line:hover{color:var(--copper-soft);opacity:1}
    copy should keep cream ink in both themes too. The broad dark-mode body
    rule was flipping it to muted taupe: 4.42:1 on the rust card. */
 :root[data-theme="dark"] .pblock-grid .pblock p{color:var(--cream)}
+
+
+/* booking expectation note - sits under a booking CTA to say what the portal will ask for */
+.booking-note{margin:1rem 0 0;max-width:56ch;font-size:.9rem;line-height:1.55;opacity:.85}
+.cta-final .booking-note{margin-left:auto;margin-right:auto}
