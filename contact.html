@@ -105,7 +105,7 @@
 <section class="band cream" id="enquiry">
   <div class="wrap">
     <div class="section-head"><p><span class="banner-pill ochre">Send a note</span></p><h2>Or write to us <em>here.</em></h2><p class="lede-2" style="max-width:56ch">A few lines is plenty. If you&rsquo;d rather not open your email, this reaches the same inbox.</p></div>
-  <form action='/referral-thank-you' class='form' data-netlify="true" netlify-honeypot="bot-field" method='POST' name='enquiry-contact' onsubmit="try{gtag('event','generate_lead',{form:'enquiry-contact'})}catch(e){}">
+  <form action='/referral-thank-you' class='form' data-netlify="true" netlify-honeypot="bot-field" method='POST' name='enquiry-contact'>
         <input type="hidden" name="form-name" value="enquiry-contact"/>
         <p class="hp"><label>Leave this field empty: <input name="bot-field"/></label></p>
 
@@ -311,7 +311,7 @@
   else if(choice!=='denied' && bar){ bar.hidden=false; }
   var a=document.getElementById('bbcConsentAccept'), d=document.getElementById('bbcConsentDecline');
   if(a) a.addEventListener('click',function(){ setck('bbc_consent','granted'); if(bar) bar.hidden=true; enable(); });
-  if(d) d.addEventListener('click',function(){ setck('bbc_consent','denied'); if(bar) bar.hidden=true; });
+  if(d) d.addEventListener('click',function(){ setck('bbc_consent','denied'); if(bar) bar.hidden=true; }); document.querySelectorAll('form.form').forEach(function(f){ f.addEventListener('submit', function(){ try{ gtag('event','generate_lead',{form: f.getAttribute('name')||'enquiry'}); }catch(e){} }); });
 })();
 </script>
 
