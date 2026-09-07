@@ -4,6 +4,10 @@
 [build]
   publish = "."
   command = ""
+  # Skip the deploy when a commit touches only .github/ (the site gate and its
+  # workflow). Every production deploy costs ~15 credits and a gate edit changes
+  # nothing a visitor sees. Exit 0 = no site change = build skipped. Added 7 Sep 2026.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude).github'"
 
 # ---------------------------------------------------------------------------
 # Security headers
