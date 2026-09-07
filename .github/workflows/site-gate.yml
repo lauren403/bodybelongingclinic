@@ -1,0 +1,37 @@
+# The website gate. Runs .github/site_gate.py on every push and pull request:
+# every page rendered headless at desktop and phone width, light and dark, and
+# every word on it asserted visible and readable. See the script's docstring for
+# why it exists (7 Sep 2026).
+#
+# The self-test runs first: the gate must be seen to FAIL on the known defects
+# before its pass on the real site means anything.
+name: site gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Playwright Chromium
+        run: |
+          pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+      - name: Self-test (the gate must fail on the known defects)
+        run: python3 .github/site_gate.py --self-test
+      - name: Static checks
+        run: python3 .github/site_gate.py --static --quiet
+      - name: Render every page, both widths, both themes
+        run: python3 .github/site_gate.py --quiet
