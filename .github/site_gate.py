@@ -75,8 +75,9 @@ async (args) => {
   const sleep = ms => new Promise(r => setTimeout(r, ms));
   // Scroll the whole page so every observer-driven reveal has fired.
   const H = () => document.documentElement.scrollHeight;
-  for (let y = 0; y < H(); y += Math.max(200, innerHeight * 0.6)) { scrollTo(0, y); await sleep(120); }
+  for (let y = 0; y < H(); y += Math.max(200, innerHeight * 0.6)) { scrollTo(0, y); await sleep(200); }
   scrollTo(0, H()); await sleep(1200); scrollTo(0, 0); await sleep(300);
+  const effOpacity = el => { let o = 1; for (let e = el; e && e !== document.documentElement; e = e.parentElement) o *= parseFloat(getComputedStyle(e).opacity); return o; };
 
   const lum = (r, g, b) => { const f = c => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
     return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b); };
@@ -119,7 +120,14 @@ async (args) => {
     const cs = getComputedStyle(el);
     if (cs.fontSize && parseFloat(cs.fontSize) < 1) continue;
     out.checked++;
-    if (opacity < minOpacity) { out.invisible.push(desc(el) + ' opacity=' + opacity.toFixed(2)); continue; }
+    if (opacity < minOpacity) {
+      // Confirm before accusing: bring it into view the way a reader would and read again.
+      // A slow runner can leave an observer-driven reveal unfired; a real defect stays at 0.
+      el.scrollIntoView({block: 'center'}); await sleep(700);
+      const again = effOpacity(el);
+      if (again < minOpacity) out.invisible.push(desc(el) + ' opacity=' + again.toFixed(2) + ' (still, after scrolling to it)');
+      continue;
+    }
     if (overImage) continue;
     if (!bg || bg.pending) bg = parse(getComputedStyle(document.body).backgroundColor);
     if (!bg || bg.a === 0) bg = {r: 255, g: 255, b: 255, a: 1};
