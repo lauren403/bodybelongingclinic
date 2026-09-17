@@ -118,3 +118,174 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# ---------------------------------------------------------------------------
+# Old .html addresses
+# ---------------------------------------------------------------------------
+# Every page moved to its extensionless address on 2 Sep 2026 (canonicals,
+# sitemap and internal links all point there). The .html copies still served a
+# 200, so Google kept indexing them as duplicates. A 301 hands their ranking to
+# the clean URL and lets the duplicates drop out. Added 17 Sep 2026.
+# If you add a page to sitemap.xml, add its .html line here too.
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pathways.html"
+  to = "/pathways"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/just-diagnosed-adhd-support-perth.html"
+  to = "/just-diagnosed-adhd-support-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/offerings.html"
+  to = "/offerings"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medicare.html"
+  to = "/medicare"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/referrals.html"
+  to = "/referrals"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/referral.html"
+  to = "/referral"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources.html"
+  to = "/resources"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/adhd-disordered-eating-therapy-perth.html"
+  to = "/adhd-disordered-eating-therapy-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/adhd-neurodivergent-support-perth.html"
+  to = "/adhd-neurodivergent-support-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/autism-arfid-eating-therapy-perth.html"
+  to = "/autism-arfid-eating-therapy-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/eating-disorder-body-image-therapy-perth.html"
+  to = "/eating-disorder-body-image-therapy-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lgbtqia-affirming-therapy-perth.html"
+  to = "/lgbtqia-affirming-therapy-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-from-both-sides-of-the-chair.html"
+  to = "/belonging-room-from-both-sides-of-the-chair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-adhd-and-the-snack-crash.html"
+  to = "/belonging-room-adhd-and-the-snack-crash"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-grief-after-adhd-diagnosis.html"
+  to = "/belonging-room-grief-after-adhd-diagnosis"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-listen-to-your-body.html"
+  to = "/belonging-room-listen-to-your-body"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-audhd-and-eating.html"
+  to = "/belonging-room-audhd-and-eating"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-arfid-safe-foods.html"
+  to = "/belonging-room-arfid-safe-foods"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy.html"
+  to = "/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-belonging-table.html"
+  to = "/the-belonging-table"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-adhd-regular-meals.html"
+  to = "/belonging-room-adhd-regular-meals"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-autism-and-anorexia.html"
+  to = "/belonging-room-autism-and-anorexia"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gender-affirming-surgery-letters-perth.html"
+  to = "/gender-affirming-surgery-letters-perth"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/find-your-chair.html"
+  to = "/find-your-chair"
+  status = 301
+  force = true
