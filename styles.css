@@ -264,7 +264,7 @@ section{position:relative}
 .p-card:hover{transform:translateY(-4px);box-shadow:0 26px 60px rgba(42,22,32,.22)}
 .p-card .idx{font-family:var(--serif);font-style:italic;font-weight:900;font-size:3.2rem;color:var(--terracotta);line-height:.8}
 .p-card .tag{display:block;margin:1.2rem 0 .5rem;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:700;color:var(--rust)}
-.p-card h3{font-size:1.55rem;margin-bottom:.6rem;line-height:1.05;letter-spacing:-.01em}
+.p-card h3,.p-card h2.h3{font-size:1.55rem;margin-bottom:.6rem;line-height:1.05;letter-spacing:-.01em}
 .p-card p{font-size:1rem;opacity:.86;max-width:none}
 .p-card .cover{display:block;width:calc(100% + 60px);max-width:none;margin:-34px -30px 22px;aspect-ratio:8/5;object-fit:cover;border-bottom:1px solid var(--line)}
 .p-card.feature .cover{margin-top:-37px}
@@ -469,7 +469,7 @@ a.pill:hover{transform:translateY(-2px)}
 /* headings → editorial serif, lighter weight */
 h1,h2,h3{font-weight:600;letter-spacing:-.015em;line-height:1.04}
 .hero h1,.hero-cine h1,.page-hero h1,.section-head h2,.cta-final h2{font-weight:600;letter-spacing:-.02em;line-height:1.0}
-.p-card h3,.step h3,.faq summary{font-weight:600}
+.p-card h3,.p-card h2.h3,.step h3,.faq summary{font-weight:600}
 
 /* eyebrow → copper tracked label with leading rule */
 .eyebrow{font-family:var(--label);color:var(--copper);letter-spacing:.22em;font-weight:600;font-size:.7rem;gap:.7em;text-transform:uppercase}
@@ -508,6 +508,7 @@ h1,h2,h3{font-weight:600;letter-spacing:-.015em;line-height:1.04}
 
 /* sticky mobile book → copper */
 @media(max-width:760px){.sticky-book a{background:var(--copper)}}
+@media(max-width:760px){.sticky-book.wc a{background:var(--rust)}}
 
 /* bands → warm base + jewel accent moments (teal removed) */
 .band.coral,.band.terracotta{background:var(--burgundy);color:var(--cream)}
@@ -954,3 +955,8 @@ a.foot-line:hover{color:var(--copper-soft);opacity:1}
 /* booking expectation note - sits under a booking CTA to say what the portal will ask for */
 .booking-note{margin:1rem 0 0;max-width:56ch;font-size:.9rem;line-height:1.55;opacity:.85}
 .cta-final .booking-note{margin-left:auto;margin-right:auto}
+
+/* inline text link inside prose (WorkCover page) */
+.inline-link{color:var(--copper-ink);font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.band.espresso .inline-link{color:var(--copper-soft)}
+:root[data-theme="dark"] .inline-link{color:var(--copper-soft)}
