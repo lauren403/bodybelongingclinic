@@ -289,3 +289,9 @@
   to = "/find-your-chair"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/after-the-diagnosis.html"
+  to = "/after-the-diagnosis"
+  status = 301
+  force = true
