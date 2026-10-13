@@ -289,3 +289,15 @@
   to = "/find-your-chair"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/in-person.html"
+  to = "/in-person"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/in-person-thank-you.html"
+  to = "/in-person-thank-you"
+  status = 301
+  force = true
