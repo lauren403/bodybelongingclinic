@@ -371,9 +371,11 @@ blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,2.9rem
 .form .check{display:flex;gap:.6rem;align-items:flex-start;font-weight:400;font-size:.95rem}
 .form .check input{width:auto;margin-top:.25rem}
 .hp{position:absolute;left:-9999px}
-.form-note{font-size:.9rem;color:var(--muted);margin-top:.3rem}
-.form-note .more-link{color:#8a4a28}
-:root[data-theme="dark"] .form-note .more-link{color:var(--copper-soft)}
+.form-note{font-size:.9rem;opacity:.8;margin-top:.3rem}
+/* Links in faded notes on light grounds: deep enough to stay 4.5:1 through the .8 fade. */
+:root:not([data-theme="dark"]) .form-note .more-link{color:#5e2f17}
+.band.coral .form-note .more-link,.band.blue .form-note .more-link,.band.espresso .form-note .more-link,
+.band.terracotta .form-note .more-link,.band.taupe .form-note .more-link{color:inherit}
 
 /* footer */
 .site-footer{background:var(--espresso);color:var(--cream);padding:clamp(56px,7vw,84px) 0 40px}
