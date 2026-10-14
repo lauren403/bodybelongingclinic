@@ -101,6 +101,21 @@
   status = 301
   force = true
 
+# bodybelongingclinic.online is a domain alias on this project and was serving
+# a full second copy of the site (200, not a redirect). Found 14 Oct 2026 when
+# Search Console listed it as a referring page. One address for the clinic.
+[[redirects]]
+  from = "https://bodybelongingclinic.online/*"
+  to = "https://www.bodybelongingclinic.com.au/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.bodybelongingclinic.online/*"
+  to = "https://www.bodybelongingclinic.com.au/:splat"
+  status = 301
+  force = true
+
 # ---------------------------------------------------------------------------
 # Caching
 # ---------------------------------------------------------------------------
