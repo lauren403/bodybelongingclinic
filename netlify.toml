@@ -47,8 +47,7 @@
       font-src 'self' https://fonts.gstatic.com data:; \
       script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.clarity.ms https://connect.facebook.net https://preview.mailerlite.io; \
       connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://www.facebook.com https://connect.facebook.net https://preview.mailerlite.io; \
-      frame-src https://clientportal.zandahealth.com https://www.instagram.com https://www.google.com; \
-      upgrade-insecure-requests"""
+      frame-src https://clientportal.zandahealth.com https://www.instagram.com https://www.google.com"""
 
 # ---------------------------------------------------------------------------
 # Canonical host

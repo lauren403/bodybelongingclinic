@@ -171,8 +171,8 @@
         <div class="creds-col creds-flags">
           <p class="footer-h">The communities we stand with</p>
           <div class="flag-row">
-            <img alt="Aboriginal and Torres Strait Islander flags" loading="lazy" src="assets/aboriginal-torres-strait-flags.webp"/>
-            <img alt="Progress Pride flag" loading="lazy" src="assets/unity-pride-flag.webp"/>
+            <img width="620" height="207" alt="Aboriginal and Torres Strait Islander flags" loading="lazy" src="assets/aboriginal-torres-strait-flags.webp"/>
+            <img width="620" height="413" alt="Progress Pride flag" loading="lazy" src="assets/unity-pride-flag.webp"/>
           </div>
         </div>
       </div>
@@ -190,6 +190,7 @@
   var sel='.section-head, .split>div, .p-card, .step, .brand-art, .note, .booking-embed, .optin>div, .cta-final, .prose, .form, .figure-card';
   var els=[].slice.call(document.querySelectorAll(sel));
   if(!els.length)return;
+  els=els.filter(function(el){return el.getBoundingClientRect().top>window.innerHeight;});if(!els.length)return;
   els.forEach(function(el,i){el.classList.add('reveal-init');el.style.transitionDelay=((i%5)*70)+'ms';});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('reveal-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
   els.forEach(function(el){io.observe(el);});

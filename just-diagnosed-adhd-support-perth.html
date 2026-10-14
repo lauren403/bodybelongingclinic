@@ -90,7 +90,7 @@
       </ul>
       <p class="form-note" style="margin-top:1.3rem">If you nodded at any of these, this page is for you &mdash; and nothing needs figuring out before you start.</p>
     </div>
-    <img class="figure-card" src="/.netlify/images?url=/assets/feature-mug.jpg&amp;w=1200&amp;fm=webp&amp;q=75" alt="Hands cradled around a warm mug in the terracotta chair, the lamp glowing on the side table &mdash; a warm, quiet room" style="object-position:center 62%" decoding="async" loading="lazy">
+    <img width="1200" height="1500" class="figure-card" src="/.netlify/images?url=/assets/feature-mug.jpg&amp;w=1200&amp;fm=webp&amp;q=75" alt="Hands cradled around a warm mug in the terracotta chair, the lamp glowing on the side table &mdash; a warm, quiet room" style="object-position:center 62%" decoding="async" loading="lazy">
   </div>
 </section>
 
@@ -121,7 +121,7 @@
 
 <section class="band cream-2">
   <div class="wrap split">
-    <img class="figure-card" src="/.netlify/images?url=/assets/founder-hero.jpg&amp;w=1000&amp;fm=webp&amp;q=75" alt="Lauren Lynch seated in a terracotta chair, looking warmly at the camera" style="object-position:center 30%" decoding="async" loading="lazy">
+    <img width="1000" height="1250" class="figure-card" src="/.netlify/images?url=/assets/founder-hero.jpg&amp;w=1000&amp;fm=webp&amp;q=75" alt="Lauren Lynch seated in a terracotta chair, looking warmly at the camera" style="object-position:center 30%" decoding="async" loading="lazy">
     <div>
       <div class="section-head"><p class="banner-pill">Who you&rsquo;ll be sitting with</p><h2>The person in the other <em>chair.</em></h2><p class="lede-2">Lauren Lynch is an Accredited Mental Health Social Worker and an ANZAED Credentialed Eating Disorder Clinician &mdash; a rare pairing that means ADHD and eating can be worked with together, not in separate rooms. She built Body Belonging because she&rsquo;s sat in both chairs &mdash; the clinician&rsquo;s and the client&rsquo;s.</p></div>
       <p style="margin-top:1.2rem;font-size:1.08rem">Sessions with her are warm and unhurried: nothing to perform, and nothing to prove.</p>
@@ -313,8 +313,8 @@
         <div class="creds-col creds-flags">
           <p class="footer-h">The communities we stand with</p>
           <div class="flag-row">
-            <img alt="Aboriginal and Torres Strait Islander flags" loading="lazy" src="assets/aboriginal-torres-strait-flags.webp"/>
-            <img alt="Progress Pride flag" loading="lazy" src="assets/unity-pride-flag.webp"/>
+            <img width="620" height="207" alt="Aboriginal and Torres Strait Islander flags" loading="lazy" src="assets/aboriginal-torres-strait-flags.webp"/>
+            <img width="620" height="413" alt="Progress Pride flag" loading="lazy" src="assets/unity-pride-flag.webp"/>
           </div>
         </div>
       </div>
@@ -332,6 +332,7 @@
   var sel='.section-head, .split>div, .p-card, .step, .brand-art, .note, .booking-embed, .optin>div, .cta-final, .prose, .form, .figure-card';
   var els=[].slice.call(document.querySelectorAll(sel));
   if(!els.length)return;
+  els=els.filter(function(el){return el.getBoundingClientRect().top>window.innerHeight;});if(!els.length)return;
   els.forEach(function(el,i){el.classList.add('reveal-init');el.style.transitionDelay=((i%5)*70)+'ms';});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('reveal-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
   els.forEach(function(el){io.observe(el);});

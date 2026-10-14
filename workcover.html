@@ -319,6 +319,7 @@
   var sel='.section-head, .split>div, .p-card, .step, .brand-art, .note, .booking-embed, .optin>div, .cta-final, .prose, .form, .figure-card';
   var els=[].slice.call(document.querySelectorAll(sel));
   if(!els.length)return;
+  els=els.filter(function(el){return el.getBoundingClientRect().top>window.innerHeight;});if(!els.length)return;
   els.forEach(function(el,i){el.classList.add('reveal-init');el.style.transitionDelay=((i%5)*70)+'ms';});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('reveal-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
   els.forEach(function(el){io.observe(el);});
