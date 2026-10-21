@@ -303,3 +303,12 @@
   to = "/find-your-chair"
   status = 301
   force = true
+
+# GP referral letter template (moved from the ADHD hub, 21 Oct 2026). GPs import
+# it into Best Practice or MedicalDirector, so serve it as an RTF download.
+[[headers]]
+  for = "/gp/*.rtf"
+  [headers.values]
+    Content-Type = "application/rtf"
+    Content-Disposition = "attachment; filename=\"body-belonging-gp-referral-template.rtf\""
+    Cache-Control = "public, max-age=86400"

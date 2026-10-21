@@ -61,7 +61,7 @@
 </style>
 <meta content="https://www.bodybelongingclinic.com.au/find-your-chair" property="og:url"/>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","name":"Find your chair | Body Belonging Clinic","description":"A gentle few questions to help you find the right place to start at Body Belonging Clinic. Not an assessment. No wrong answers.","url":"https://www.bodybelongingclinic.com.au/find-your-chair","isPartOf":{"@type":"WebSite","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"},"publisher":{"@type":"MedicalBusiness","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"}}
+{"@context":"https://schema.org","@type":"WebPage","name":"Find your chair | Body Belonging Clinic","description":"A gentle few questions to help you find the right place to start at Body Belonging Clinic. Not an assessment. No wrong answers.","url":"https://www.bodybelongingclinic.com.au/find-your-chair","isPartOf":{"@type":"WebSite","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"},"publisher":{"@type":"MedicalBusiness","@id": "https://www.bodybelongingclinic.com.au/#clinic","name":"Body Belonging Clinic","url":"https://www.bodybelongingclinic.com.au/"}}
 </script>
 </head>
 <body>
@@ -131,9 +131,9 @@
           <button class="fyc-back" data-back>&larr; Back</button>
           <p class="banner-pill">Question 3 of 4</p>
           <h2 class="fyc-q">Where would you rather <em>sit?</em></h2>
-          <p class="fyc-hint">Telehealth now, with in person times in Perth being planned. Tell me which suits you.</p>
+          <p class="fyc-hint">Telehealth, wherever you are in Australia. Tell me which suits you.</p>
           <div class="fyc-opts">
-            <button class="fyc-opt" data-q="mode" data-v="in_person"><span class="k">1</span><span class="txt"><b>In the room, in Perth</b><span>In person times are being planned. Choose this and you&rsquo;ll go on the list.</span></span></button>
+            <button class="fyc-opt" data-q="mode" data-v="in_person"><span class="k">1</span><span class="txt"><b>In the room, in Perth</b><span>Choose this and you&rsquo;ll hear first when in person times open.</span></span></button>
             <button class="fyc-opt" data-q="mode" data-v="telehealth"><span class="k">2</span><span class="txt"><b>Online, from wherever I am</b><span>Telehealth, anywhere in Australia.</span></span></button>
             <button class="fyc-opt" data-q="mode" data-v="either"><span class="k">3</span><span class="txt"><b>Either, whatever&rsquo;s easiest</b><span>We can work it out together.</span></span></button>
           </div>
@@ -191,7 +191,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a aria-label='Body Belonging Clinic home' class='footer-mark' href='/'><img src="assets/chair-mark-cream.svg" alt="" width="30" height="30"/> body belonging <small>clinic</small></a>
-        <p class="footer-tag">Eating disorder &amp; body image therapy, neurodivergent-led. Online across Australia, with in person times in Perth being planned.</p>
+        <p class="footer-tag">ADHD, eating disorder &amp; body image therapy, neurodivergent-led. Online across Australia.</p>
         <div class="footer-contact">
           <a class="pill footer-book" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a session &rarr;</a>
           <a class="foot-line" href="mailto:admin@bodybelongingclinic.com.au">admin@bodybelongingclinic.com.au</a>
@@ -218,7 +218,7 @@
           <a href='/eating-disorder-body-image-therapy-perth'>Eating disorders &amp; body image</a>
           <a href='/lgbtqia-affirming-therapy-perth'>LGBTQIA+ affirming</a>
           <a href="https://queerlovelounge.com.au" target="_blank" rel="noopener">Queer couples therapy ↗</a>
-<a href="https://adhd.bodybelongingclinic.com.au" target="_blank" rel="noopener">ADHD care map &amp; letters ↗</a>
+          <a href="https://adhd.bodybelongingclinic.com.au" target="_blank" rel="noopener">The ADHD library ↗</a>
           <a href='/gender-affirming-surgery-letters-perth'>Surgery letters</a>
           <a href='/just-diagnosed-adhd-support-perth'>Just diagnosed?</a>
         </div>
@@ -226,6 +226,7 @@
           <p class="footer-h">Connect</p>
           <a href='/contact'>Get in touch</a>
           <a href='/referrals'>Referrals</a>
+          <a href='/for-gps'>For GPs</a>
           <a href='/workcover'>WorkCover WA</a>
           <a href='/the-belonging-table'>The Belonging Table</a>
           <a href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank">Instagram</a>
@@ -367,7 +368,7 @@
       }
 
       if(mode === 'telehealth'){ body += ' Telehealth is available right across Australia.'; }
-      else if(mode === 'in_person'){ body += ' In person times in Perth are being planned, and you&rsquo;ll be on the list for them. Until then we&rsquo;d meet by telehealth.'; }
+      else if(mode === 'in_person'){ body += ' You&rsquo;ll hear first when in person times open in Perth. Until then we&rsquo;d meet by telehealth.'; }
     }
 
     document.getElementById('fycTitle').innerHTML = title;
