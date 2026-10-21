@@ -307,8 +307,15 @@
 # GP referral letter template (moved from the ADHD hub, 21 Oct 2026). GPs import
 # it into Best Practice or MedicalDirector, so serve it as an RTF download.
 [[headers]]
-  for = "/gp/*.rtf"
+  for = "/gp/body-belonging-gp-referral-template.rtf"
   [headers.values]
     Content-Type = "application/rtf"
     Content-Disposition = "attachment; filename=\"body-belonging-gp-referral-template.rtf\""
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/gp/body-belonging-gp-referral-template-bp-md.rtf"
+  [headers.values]
+    Content-Type = "application/rtf"
+    Content-Disposition = "attachment; filename=\"body-belonging-gp-referral-template-bp-md.rtf\""
     Cache-Control = "public, max-age=86400"
