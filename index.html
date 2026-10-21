@@ -61,6 +61,7 @@
     :root[data-theme="dark"] .trust-band .proof-card p{color:#6E5A4E}
 @media(max-width:900px){.trust-band .proof-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.trust-band .proof-grid{grid-template-columns:1fr}.trust-band .trust-logos img{height:54px}}
+@media(min-width:561px) and (max-width:1180px){.creds .wrap{display:grid;grid-template-columns:repeat(2,auto);justify-content:center}}
 </style>
 </head>
 <body>
@@ -99,16 +100,16 @@
 
 <!-- TRUST STRIP -->
 <section class="creds" aria-label="Clinic credentials and availability">
-  <div class="wrap">
+  <div class="wrap" style="gap:.7rem 1.5rem;padding-left:24px;padding-right:24px">
     <span>Now welcoming new clients</span>
     <span>First sessions within two weeks</span>
-    <span>$89.50 back per session with a GP plan</span>
+    <span>$89.50 back with a GP plan</span>
     <span>ANZAED-credentialed</span>
   </div>
 </section>
 
 <!-- STATEMENT -->
-<section class="band cream" style="padding-top:0">
+<section class="band cream" style="padding-top:clamp(40px,5vw,64px)">
   <div class="wrap">
     <div class="section-head"><p class="eyebrow">One story, not two</p><h2>Made for the way your <em>brain actually works.</em></h2></div>
     <p style="max-width:62ch;font-size:1.12rem;color:var(--muted)">If you’re neurodivergent, eating and the brain are often the same story: interoception that runs quiet, sensory needs and safe foods, an appetite that vanishes on stimulant meds and arrives all at once after dark. We work right where ADHD, autism and AuDHD meet disordered eating, ARFID and body image: the place other services tend to split apart.</p>
