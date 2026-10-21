@@ -42,6 +42,10 @@
 .channels span{display:block;font-size:.85rem;opacity:.8}
 .channels b{overflow-wrap:anywhere}
 @media(max-width:560px){.channels{grid-template-columns:1fr}}
+:root[data-theme="dark"] .sheet,:root[data-theme="dark"] .stage-list>div,:root[data-theme="dark"] .channels li{background:#22150E;color:#E7DAC5;border-color:var(--line)}
+:root[data-theme="dark"] .sheet h2,:root[data-theme="dark"] .sheet strong,:root[data-theme="dark"] .stage-list dt,:root[data-theme="dark"] .channels b,:root[data-theme="dark"] .channels a{color:#F3EAD9}
+:root[data-theme="dark"] .sheet p,:root[data-theme="dark"] .stage-list dd{color:#CBB99F}
+:root[data-theme="dark"] .sheet .pill.ghost{color:#F3EAD9;border-color:#CBB99F}
 @media print{
   body *{visibility:hidden!important}
   .site-header,.site-footer,.consent-bar,.sticky-book{display:none!important}
