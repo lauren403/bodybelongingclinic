@@ -108,8 +108,20 @@
   function add(){
     if(document.querySelector('.sticky-book'))return;
     var d=document.createElement('div'); d.className='sticky-book';
-    d.innerHTML='<a href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank" aria-label="Book a session">Book a session →</a>';
+    d.innerHTML='<a href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank" aria-label="Book a free 15-minute call">Book a free call →</a>';
     document.body.appendChild(d);
+    /* step aside while another booking button is already on screen */
+    try{
+      var t=document.querySelectorAll('.actions-row,.cta-final,.site-footer');
+      if(!t.length||!('IntersectionObserver' in window))return;
+      var on=new Set();
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting)on.add(e.target); else on.delete(e.target); });
+        var h=on.size>0; d.classList.toggle('is-hidden',h);
+        var l=d.querySelector('a'); if(h){d.setAttribute('aria-hidden','true');l.setAttribute('tabindex','-1');}else{d.removeAttribute('aria-hidden');l.removeAttribute('tabindex');}
+      },{rootMargin:'0px 0px -40px 0px'});
+      t.forEach(function(el){io.observe(el);});
+    }catch(err){}
   }
   if(document.readyState!=='loading')add(); else document.addEventListener('DOMContentLoaded',add);
 })();

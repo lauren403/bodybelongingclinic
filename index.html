@@ -55,6 +55,7 @@
 .trust-band .trust-logos img{height:66px;width:auto;max-width:150px;object-fit:contain;display:block}
 .trust-band .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:2.4rem}
 .trust-band .proof-card{background:#fff;border:1px solid rgba(36,22,17,.07);border-radius:18px;padding:1.5rem 1.55rem;box-shadow:0 3px 14px rgba(36,22,17,.05)}
+.trust-band .proof-card .proof-logo{display:block;height:64px;width:auto;max-width:150px;object-fit:contain;margin:0 0 1rem}
 .trust-band .proof-card .k{display:block;font-family:var(--serif);font-style:italic;color:var(--rust);font-weight:700;font-size:.9rem;letter-spacing:.01em;margin-bottom:.35rem}
 .trust-band .proof-card h3{font-family:var(--display);margin:0 0 .5rem;font-size:1.08rem;line-height:1.2;color:var(--espresso)}
 .trust-band .proof-card p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.5}
@@ -158,17 +159,12 @@
 <section class="band cream-3 trust-band" aria-label="Accreditations and why you can trust this care">
 <div class="wrap">
 <div class="section-head center"><p class="eyebrow">Why you’re in safe hands</p><h2>Affirming <em>and</em> accredited.</h2><p class="lede-2" style="max-width:58ch;margin:1rem auto 0;color:var(--muted)">Warmth is the easy part to claim. This care is also held to the standards these accreditations demand, so you never have to choose between feeling understood and being in skilled, accountable hands.</p></div>
-<ul class="trust-logos" aria-label="Accreditations and memberships">
-<li><img src="/.netlify/images?url=/assets/anzaed-credential.png&amp;w=160&amp;fm=webp&amp;q=80" alt="ANZAED Credentialed Eating Disorder Clinician" loading="lazy" width="462" height="462"/></li>
-<li><img src="/.netlify/images?url=/assets/aasw-amhsw.png&amp;w=160&amp;fm=webp&amp;q=80" alt="AASW Accredited Mental Health Social Worker" loading="lazy" width="319" height="392"/></li>
-<li><img src="/.netlify/images?url=/assets/adhd-wa.png&amp;w=160&amp;fm=webp&amp;q=80" alt="In partnership with ADHD WA" loading="lazy" width="320" height="306"/></li>
-<li><img src="/.netlify/images?url=/assets/snaicc-associate-member.png&amp;w=160&amp;fm=webp&amp;q=80" alt="SNAICC Associate Member" loading="lazy" width="318" height="320"/></li>
-</ul>
+
 <div class="proof-grid">
-<article class="proof-card"><span class="k">Eating disorders</span><h3>ANZAED-credentialed clinician</h3><p>Credentialed by ANZAED, Australia&rsquo;s national credential for safe, evidence-based eating disorder care.</p></article>
-<article class="proof-card"><span class="k">Medicare-eligible</span><h3>Accredited Mental Health Social Worker</h3><p>AASW-accredited and Medicare-registered, so eligible clients can claim rebates under Better Access and Eating Disorder plans.</p></article>
-<article class="proof-card"><span class="k">Aboriginal-led</span><h3>Yorta Yorta-led &middot; SNAICC associate</h3><p>A proudly First Nations-led practice and SNAICC associate member. Cultural safety built in, never bolted on.</p></article>
-<article class="proof-card"><span class="k">Neurodivergent-led</span><h3>By one of your own &middot; ADHD WA</h3><p>Built by a neurodivergent clinician, in partnership with ADHD WA: care designed for how your brain actually works.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/anzaed-credential.png&amp;w=200&amp;fm=webp&amp;q=80" alt="ANZAED Credentialed Eating Disorder Clinician" loading="lazy" width="462" height="462"/><span class="k">Eating disorders</span><h3>ANZAED-credentialed clinician</h3><p>Credentialed by ANZAED, Australia&rsquo;s national credential for safe, evidence-based eating disorder care.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/aasw-amhsw.png&amp;w=200&amp;fm=webp&amp;q=80" alt="AASW Accredited Mental Health Social Worker" loading="lazy" width="319" height="392"/><span class="k">Medicare-eligible</span><h3>Accredited Mental Health Social Worker</h3><p>AASW-accredited and Medicare-registered, so eligible clients can claim rebates under Better Access and Eating Disorder plans.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/snaicc-associate-member.png&amp;w=200&amp;fm=webp&amp;q=80" alt="SNAICC Associate Member" loading="lazy" width="318" height="320"/><span class="k">Aboriginal-led</span><h3>Yorta Yorta-led &middot; SNAICC associate</h3><p>A proudly First Nations-led practice and SNAICC associate member. Cultural safety built in, never bolted on.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/adhd-wa.png&amp;w=200&amp;fm=webp&amp;q=80" alt="In partnership with ADHD WA" loading="lazy" width="320" height="306"/><span class="k">Neurodivergent-led</span><h3>By one of your own, with ADHD&nbsp;WA</h3><p>Built by a neurodivergent clinician, in partnership with ADHD WA: care designed for how your brain actually works.</p></article>
 </div>
 <!-- REVIEWS SLOT: once consented client words or Google reviews exist, add a `.proof-grid` of quote cards here (or a Google reviews badge). Styling is ready. -->
 </div>
@@ -212,7 +208,7 @@
       <p>Our gentle starter guide, <em>When food stuff is brain stuff</em>: what the ADHD-and-eating overlap can look like, and a few kind places to begin. Free when you join, and you can leave any time.</p>
     </div>
     <div class="optin-form">
-      <a class="pill" href="https://preview.mailerlite.io/forms/2525880/194416734325704392/share" rel="noopener">Send me the guide &rarr;</a>
+      <a class="pill" href="https://preview.mailerlite.io/forms/2525880/201371247630616439/share" rel="noopener">Send me the guide &rarr;</a>
     </div>
   </div>
 </section>
