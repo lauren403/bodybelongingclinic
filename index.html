@@ -55,12 +55,15 @@
 .trust-band .trust-logos img{height:66px;width:auto;max-width:150px;object-fit:contain;display:block}
 .trust-band .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:2.4rem}
 .trust-band .proof-card{background:#fff;border:1px solid rgba(36,22,17,.07);border-radius:18px;padding:1.5rem 1.55rem;box-shadow:0 3px 14px rgba(36,22,17,.05)}
+.trust-band .proof-card .proof-logo{display:block;height:64px;width:auto;max-width:150px;object-fit:contain;margin:0 0 1rem}
 .trust-band .proof-card .k{display:block;font-family:var(--serif);font-style:italic;color:var(--rust);font-weight:700;font-size:.9rem;letter-spacing:.01em;margin-bottom:.35rem}
 .trust-band .proof-card h3{font-family:var(--display);margin:0 0 .5rem;font-size:1.08rem;line-height:1.2;color:var(--espresso)}
 .trust-band .proof-card p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.5}
     :root[data-theme="dark"] .trust-band .proof-card p{color:#6E5A4E}
 @media(max-width:900px){.trust-band .proof-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.trust-band .proof-grid{grid-template-columns:1fr}.trust-band .trust-logos img{height:54px}}
+.cards .p-card{display:flex;flex-direction:column}.cards .p-card>.more-link{margin-top:auto;align-self:flex-start}
+@media(min-width:561px) and (max-width:1180px){.creds .wrap{display:grid;grid-template-columns:repeat(2,auto);justify-content:center}}
 </style>
 </head>
 <body>
@@ -87,12 +90,11 @@
   <div class="wrap split">
     <div class="body">
       <h1 style="font-size:clamp(3rem,7vw,5.9rem)"><span class="eyebrow" style="display:flex;line-height:1.5;font-style:normal">Neurodivergent-led ADHD &amp; eating disorder therapy · Perth &amp; telehealth</span>Food stuff is <em style="font-style:italic;color:var(--burgundy)">brain stuff.</em></h1>
-      <p class="lede-2" style="font-size:1.2rem;max-width:34ch;margin-top:1.4rem;color:var(--muted)">Specialised, affirming therapy for where ADHD, autism, eating and body image meet. Online across Australia, with in person times in Perth being planned.</p>
+      <p class="lede-2" style="font-size:1.2rem;max-width:34ch;margin-top:1.4rem;color:var(--muted)">Specialised, affirming therapy for where ADHD, autism, eating and body image meet. Online across Australia.</p>
       <div class="actions-row">
-        <a class="pill" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a first session</a>
-        <a class='more-link' href='/offerings'>See how to begin</a>
+        <a class="pill" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a free 15-minute call</a>
       </div>
-      <p style="margin-top:1.1rem;font-size:1rem;color:var(--muted)">Not ready to book yet? <a class="more-link" style="display:inline;margin-top:0;padding-bottom:1px" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Start with a free 15-minute call</a>. No referral, nothing to organise first.</p>
+      <p style="margin-top:1.1rem;font-size:1rem;color:var(--muted)">No referral, nothing to organise first. Ready to start? <a class="more-link" style="display:inline;margin-top:0;padding-bottom:1px" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a first session</a>.</p>
     </div>
     <img width="1100" height="1375" class="figure-card" src="/.netlify/images?url=/assets/founder-front-chair.jpg&amp;w=1100&amp;fm=webp&amp;q=75" alt="Lauren Lynch, founder of Body Belonging Clinic, seated in a terracotta bouclé chair." decoding="async">
   </div>
@@ -100,20 +102,16 @@
 
 <!-- TRUST STRIP -->
 <section class="creds" aria-label="Clinic credentials and availability">
-  <div class="wrap">
+  <div class="wrap" style="gap:.7rem 1.5rem;padding-left:24px;padding-right:24px">
     <span>Now welcoming new clients</span>
     <span>First sessions within two weeks</span>
-    <span>Replies the same working day</span>
-    <span>Medicare rebates via Better Access</span>
-    <span>$89.50 rebate per session with a GP plan</span>
-    <span>ANZAED-credentialed ED clinician</span>
-    <span>Neurodivergent-led</span>
-    <span>Telehealth Australia-wide &middot; In person in Perth being planned</span>
+    <span>$89.50 back with a GP plan</span>
+    <span>ANZAED-credentialed</span>
   </div>
 </section>
 
 <!-- STATEMENT -->
-<section class="band cream" style="padding-top:0">
+<section class="band cream" style="padding-top:clamp(40px,5vw,64px)">
   <div class="wrap">
     <div class="section-head"><p class="eyebrow">One story, not two</p><h2>Made for the way your <em>brain actually works.</em></h2></div>
     <p style="max-width:62ch;font-size:1.12rem;color:var(--muted)">If you’re neurodivergent, eating and the brain are often the same story: interoception that runs quiet, sensory needs and safe foods, an appetite that vanishes on stimulant meds and arrives all at once after dark. We work right where ADHD, autism and AuDHD meet disordered eating, ARFID and body image: the place other services tend to split apart.</p>
@@ -124,15 +122,13 @@
 <section class="band coral">
   <div class="wrap">
     <div class="section-head"><p class="banner-pill">What we help with</p><h2>The overlap, held in <em>one room.</em></h2><p class="lede-2" style="max-width:60ch">Support for children, adolescents and adults, with family-aware care where it helps, wherever ADHD, autism and eating meet.</p></div>
-    <div class="cards two">
+    <div class="cards">
       <article class="p-card"><span class="tag">ADHD</span><h3>ADHD &amp; disordered eating</h3><p>Food, focus, appetite on stimulant meds, and body image, for the ADHD brain.</p><a class='more-link' href='/adhd-disordered-eating-therapy-perth'>Explore</a></article>
       <article class="p-card"><span class="tag">Autism &amp; ARFID</span><h3>Autism, ARFID &amp; food</h3><p>Sensory-led eating and safe foods, met with respect, not pressure.</p><a class='more-link' href='/autism-arfid-eating-therapy-perth'>Explore</a></article>
       <article class="p-card"><span class="tag">Body image</span><h3>Eating disorders &amp; body image</h3><p>Food rules, body image and recovery, long before you feel &ldquo;sick enough&rdquo;, and well past it.</p><a class='more-link' href='/eating-disorder-body-image-therapy-perth'>Body image counselling and eating disorder therapy</a></article>
-      <article class="p-card"><span class="tag">ADHD support</span><h3>ADHD therapy &amp; support</h3><p>Overwhelm, rejection sensitivity, late diagnosis and burnout: the whole ADHD picture.</p><a class='more-link' href='/adhd-neurodivergent-support-perth'>Explore</a></article>
-      <article class="p-card"><span class="tag">LGBTQIA+</span><h3>LGBTQIA+ affirming care</h3><p>Identity, body and belonging, held by a queer-led clinician, with nothing to explain first.</p><a class='more-link' href='/lgbtqia-affirming-therapy-perth'>Explore</a></article>
-      <article class="p-card"><span class="tag">Newly diagnosed</span><h3>Just diagnosed?</h3><p>A soft place to land after a late ADHD diagnosis.</p><a class='more-link' href='/just-diagnosed-adhd-support-perth'>Explore</a></article>
     </div>
-    <p style="margin-top:2rem"><a class='more-link' href='/pathways'>See all pathways</a></p>
+    <p class="lede-2" style="margin-top:2rem;max-width:60ch">Also here: <a class='more-link' style="display:inline;margin-top:0" href='/adhd-neurodivergent-support-perth'>ADHD therapy &amp; support</a>, <a class='more-link' style="display:inline;margin-top:0" href='/lgbtqia-affirming-therapy-perth'>LGBTQIA+ affirming care</a> and <a class='more-link' style="display:inline;margin-top:0" href='/just-diagnosed-adhd-support-perth'>support after a new diagnosis</a>.</p>
+    <p style="margin-top:1.2rem"><a class='more-link' href='/pathways'>See all pathways</a></p>
     <p class="lede-2" style="margin-top:.8rem;max-width:56ch">Not sure where to start? Try <a class='more-link' href='/find-your-chair'>Find your chair</a>: four gentle questions, about a minute, and nothing is saved.</p>
   </div>
 </section>
@@ -159,73 +155,35 @@
   </div>
 </section>
 
-<!-- FEES -->
-<section class="band cream">
-  <div class="wrap">
-    <div class="note cream" style="max-width:none">
-      <p class="eyebrow">Fees &amp; Medicare</p>
-      <h2>Clear fees, room to make <em>it work.</em></h2>
-      <p style="max-width:64ch">Standard 55-minute session $200. Medicare rebates may be available for eligible clients with a Mental Health Treatment Plan (up to 10 sessions a year) or an Eating Disorder Plan (up to 40 sessions in 12 months); out-of-pocket costs apply. Two ways in: start now as a private client with no referral, or we’ll help you sort the right GP plan so the rebates apply.</p>
-      <p style="margin-top:1.2rem"><a class='more-link' href='/offerings#fees'>See full fees &amp; how to begin</a></p>
-    </div>
-  </div>
-</section>
-
-<!-- ARTICLES -->
-<section class="band cream" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head"><p class="eyebrow">From the Belonging Room</p><h2>Words from the <em>chair.</em></h2></div>
-    <div class="cards">
-      <article class="p-card feature"><img width="700" height="438" class="cover" src="/.netlify/images?url=/assets/rtile-lounge.jpg&amp;w=700&amp;fm=webp&amp;q=75" alt="Lauren seated in a warm lounge room" loading="lazy"/><span class="tag">From the founder</span><h3>From both sides of the chair</h3><p>I’m an ADHD clinician, and I’m also ADHD. Why that’s the whole point.</p><a class='more-link' href='/belonging-room-from-both-sides-of-the-chair'>Read the article</a></article>
-      <article class="p-card"><img width="700" height="438" class="cover" src="/.netlify/images?url=/assets/rtile-held.jpg&amp;w=700&amp;fm=webp&amp;q=75" alt="One person holding another gently, in warm light" loading="lazy"/><span class="tag">ADHD + eating</span><h3>ADHD and the 4pm snack crash</h3><p>Why appetite can vanish all day and arrive all at once at night, and kind ways to work with it.</p><a class='more-link' href='/belonging-room-adhd-and-the-snack-crash'>Read the article</a></article>
-      <article class="p-card"><img width="700" height="438" class="cover" src="/.netlify/images?url=/assets/rtile-handonheart.jpg&amp;w=700&amp;fm=webp&amp;q=75" alt="A hand resting on the chest, over the heart" loading="lazy"/><span class="tag">Interoception</span><h3>When “just listen to your body” doesn’t fit</h3><p>When the body’s signals run quiet, the usual advice can feel impossible. A gentler way in.</p><a class='more-link' href='/belonging-room-listen-to-your-body'>Read the article</a></article>
-    </div>
-  </div>
-</section>
-
-<!-- FREE GUIDE CAPTURE -->
-<section class="band espresso">
-  <div class="wrap optin">
-    <div>
-      <p><span class="banner-pill">Free starter guide</span></p>
-      <h2>Not ready to book? <em>Start with the guide.</em></h2>
-      <p>Our gentle starter guide, <em>When food stuff is brain stuff</em>: what the ADHD-and-eating overlap can look like, and a few kind places to begin. Free when you join, and you can leave any time.</p>
-    </div>
-    <div class="optin-form">
-      <a class="pill" href="https://preview.mailerlite.io/forms/2525880/194416734325704392/share" rel="noopener">Send me the guide &rarr;</a>
-    </div>
-  </div>
-</section>
-
-<!-- IG -->
-<section class="band ig-band tight">
-  <div class="wrap">
-    <div class="ig-head">
-      <div><p class="eyebrow">Follow along</p><h2>The chair, in your <em>feed.</em></h2></div>
-      <a class="more-link" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank">@bodybelongingclinic</a>
-    </div>
-    <div class="ig-grid"><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/ig-6.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/ig-3.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/ig-community.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/ig-5.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/ig-pride.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/ig-4.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a></div>
-  </div>
-</section>
-
 <!-- TRUST & CREDENTIALS -->
 <section class="band cream-3 trust-band" aria-label="Accreditations and why you can trust this care">
 <div class="wrap">
-<div class="section-head center"><p class="eyebrow">Why you're in safe hands</p><h2>Affirming <em>and</em> accredited.</h2><p class="lede-2" style="max-width:58ch;margin:1rem auto 0;color:var(--muted)">Warmth is the easy part to claim. This care is also held to the standards these accreditations demand, so you never have to choose between feeling understood and being in skilled, accountable hands.</p></div>
-<ul class="trust-logos" aria-label="Accreditations and memberships">
-<li><img src="/.netlify/images?url=/assets/anzaed-credential.png&amp;w=160&amp;fm=webp&amp;q=80" alt="ANZAED Credentialed Eating Disorder Clinician" loading="lazy" width="462" height="462"/></li>
-<li><img src="/.netlify/images?url=/assets/aasw-amhsw.png&amp;w=160&amp;fm=webp&amp;q=80" alt="AASW Accredited Mental Health Social Worker" loading="lazy" width="319" height="392"/></li>
-<li><img src="/.netlify/images?url=/assets/adhd-wa.png&amp;w=160&amp;fm=webp&amp;q=80" alt="In partnership with ADHD WA" loading="lazy" width="320" height="306"/></li>
-<li><img src="/.netlify/images?url=/assets/snaicc-associate-member.png&amp;w=160&amp;fm=webp&amp;q=80" alt="SNAICC Associate Member" loading="lazy" width="318" height="320"/></li>
-</ul>
+<div class="section-head center"><p class="eyebrow">Why you’re in safe hands</p><h2>Affirming <em>and</em> accredited.</h2><p class="lede-2" style="max-width:58ch;margin:1rem auto 0;color:var(--muted)">Warmth is the easy part to claim. This care is also held to the standards these accreditations demand, so you never have to choose between feeling understood and being in skilled, accountable hands.</p></div>
+
 <div class="proof-grid">
-<article class="proof-card"><span class="k">Eating disorders</span><h3>ANZAED-credentialed clinician</h3><p>Credentialed by ANZAED, Australia&rsquo;s national credential for safe, evidence-based eating disorder care.</p></article>
-<article class="proof-card"><span class="k">Medicare-eligible</span><h3>Accredited Mental Health Social Worker</h3><p>AASW-accredited and Medicare-registered, so eligible clients can claim rebates under Better Access and Eating Disorder plans.</p></article>
-<article class="proof-card"><span class="k">Aboriginal-led</span><h3>Yorta Yorta-led &middot; SNAICC associate</h3><p>A proudly First Nations-led practice and SNAICC associate member. Cultural safety built in, never bolted on.</p></article>
-<article class="proof-card"><span class="k">Neurodivergent-led</span><h3>By one of your own &middot; ADHD WA</h3><p>Built by a neurodivergent clinician, in partnership with ADHD WA: care designed for how your brain actually works.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/anzaed-credential.png&amp;w=200&amp;fm=webp&amp;q=80" alt="ANZAED Credentialed Eating Disorder Clinician" loading="lazy" width="462" height="462"/><span class="k">Eating disorders</span><h3>ANZAED-credentialed clinician</h3><p>Credentialed by ANZAED, Australia&rsquo;s national credential for safe, evidence-based eating disorder care.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/aasw-amhsw.png&amp;w=200&amp;fm=webp&amp;q=80" alt="AASW Accredited Mental Health Social Worker" loading="lazy" width="319" height="392"/><span class="k">Medicare-eligible</span><h3>Accredited Mental Health Social Worker</h3><p>AASW-accredited and Medicare-registered, so eligible clients can claim rebates under Better Access and Eating Disorder plans.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/snaicc-associate-member.png&amp;w=200&amp;fm=webp&amp;q=80" alt="SNAICC Associate Member" loading="lazy" width="318" height="320"/><span class="k">Aboriginal-led</span><h3>Yorta Yorta-led &middot; SNAICC associate</h3><p>A proudly First Nations-led practice and SNAICC associate member. Cultural safety built in, never bolted on.</p></article>
+<article class="proof-card"><img class="proof-logo" src="/.netlify/images?url=/assets/adhd-wa.png&amp;w=200&amp;fm=webp&amp;q=80" alt="In partnership with ADHD WA" loading="lazy" width="320" height="306"/><span class="k">Neurodivergent-led</span><h3>By one of your own, with ADHD&nbsp;WA</h3><p>Built by a neurodivergent clinician, in partnership with ADHD WA: care designed for how your brain actually works.</p></article>
 </div>
 <!-- REVIEWS SLOT: once consented client words or Google reviews exist, add a `.proof-grid` of quote cards here (or a Google reviews badge). Styling is ready. -->
 </div>
+</section>
+
+<!-- FEES -->
+<section class="band cream" style="padding-top:clamp(28px,4vw,48px)">
+  <div class="wrap">
+    <div class="note cream" style="max-width:820px;margin:0 auto">
+      <p class="eyebrow">Fees &amp; Medicare</p>
+      <h2>Clear fees, room to make <em>it work.</em></h2>
+      <p style="max-width:64ch">First session, 60 minutes, $200. Ongoing sessions, 55 minutes, $200. With a GP Mental Health Treatment Plan, Medicare pays $89.50 back on each session, so you pay $110.50, for up to 10 sessions a year. Some people are eligible for an Eating Disorder Plan, with up to 40 rebated sessions in 12 months.</p>
+      <ul class="fees-list" style="max-width:64ch;margin-top:1rem">
+        <li><strong>No GP plan?</strong> Book privately. No referral needed.</li>
+        <li><strong>Have a GP plan, or want one?</strong> Book the same way, and we’ll help you sort the right plan so the rebate applies.</li>
+      </ul>
+      <p style="margin-top:1.2rem"><a class='more-link' href='/offerings#fees'>See full fees &amp; how to begin</a></p>
+    </div>
+  </div>
 </section>
 
 <!-- FAQ -->
@@ -241,16 +199,52 @@
   </div>
 </section>
 
+<!-- FREE GUIDE CAPTURE -->
+<section class="band espresso">
+  <div class="wrap optin">
+    <div>
+      <p><span class="banner-pill">Free starter guide</span></p>
+      <h2>Not ready to book? <em>Start with the guide.</em></h2>
+      <p>Our gentle starter guide, <em>When food stuff is brain stuff</em>: what the ADHD-and-eating overlap can look like, and a few kind places to begin. Free when you join, and you can leave any time.</p>
+    </div>
+    <div class="optin-form">
+      <a class="pill" href="https://preview.mailerlite.io/forms/2525880/201371247630616439/share" rel="noopener">Send me the guide &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="band cream">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">From the Belonging Room</p><h2>Words from the <em>chair.</em></h2></div>
+    <div class="cards">
+      <article class="p-card feature"><img width="700" height="438" class="cover" src="/.netlify/images?url=/assets/rtile-lounge.jpg&amp;w=700&amp;fm=webp&amp;q=75" alt="Lauren seated in a warm lounge room" loading="lazy"/><span class="tag">From the founder</span><h3>From both sides of the chair</h3><p>I’m an ADHD clinician, and I’m also ADHD. Why that’s the whole point.</p><a class='more-link' href='/belonging-room-from-both-sides-of-the-chair'>Read the article</a></article>
+      <article class="p-card"><img width="700" height="438" class="cover" src="/.netlify/images?url=/assets/rtile-warm-milk.jpg&amp;w=700&amp;fm=webp&amp;q=75" alt="A glass of warm milk being stirred beside a copper kettle, in low evening light" loading="lazy"/><span class="tag">ADHD + eating</span><h3>ADHD and the 4pm snack crash</h3><p>Why appetite can vanish all day and arrive all at once at night, and kind ways to work with it.</p><a class='more-link' href='/belonging-room-adhd-and-the-snack-crash'>Read the article</a></article>
+      <article class="p-card"><img width="700" height="438" class="cover" src="/.netlify/images?url=/assets/rtile-offline-phone.jpg&amp;w=700&amp;fm=webp&amp;q=75" alt="A phone set to offline, resting on soft blue linen" loading="lazy"/><span class="tag">Interoception</span><h3>When “just listen to your body” doesn’t fit</h3><p>When the body’s signals run quiet, the usual advice can feel impossible. A gentler way in.</p><a class='more-link' href='/belonging-room-listen-to-your-body'>Read the article</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- IG -->
+<section class="band ig-band tight">
+  <div class="wrap">
+    <div class="ig-head">
+      <div><p class="eyebrow">Pull up a chair</p><h2>A softer kind of <em>clinic.</em></h2></div>
+      <a class="more-link" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank">@bodybelongingclinic</a>
+    </div>
+    <div class="ig-grid"><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/vault-cherries.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Dark red cherries on a silver tray, on white linen. Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/vault-mustard-chair.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="A sunlit mustard armchair beside a potted plant. Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/vault-petals.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Pink petals falling into a white scalloped bowl. Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/vault-coat-chair.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="A wool coat draped over a woven chair in soft window light. Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/vault-pink-mug.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="A pink mug of frothy coffee on an open magazine. Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a><a class="ig-tile" style="background-image:url('/.netlify/images?url=/assets/vault-cosmos.jpg&amp;w=400&amp;fm=webp&amp;q=72')" href="https://www.instagram.com/bodybelongingclinic" rel="noopener" target="_blank" aria-label="Pink cosmos in a glass vase against a warm terracotta wall. Body Belonging Clinic on Instagram"><svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="#fff" stroke="none"/></svg></a></div>
+  </div>
+</section>
+
 <!-- CTA (burgundy) -->
 <section class="band coral cta-final has-mark">
   <div class="wrap">
-    <p class="banner-pill" style="justify-content:center">Pull up a chair</p>
+    <p class="banner-pill" style="justify-content:center">Begin gently</p>
     <h2>We kept one <em>for you.</em></h2>
-    <p class="fees" style="opacity:.92">Start gently. Book a free 15-minute call or a first session, or send a short enquiry and we’ll take it from there.</p>
+    <p class="fees" style="opacity:.92">Start gently, with a free 15-minute call. Rather write first? <a href='/contact' style="color:inherit;text-decoration:underline">Send a short enquiry</a>.</p>
     <div class="actions">
-      <a class="pill" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a first session</a>
-      <a class="pill ghost" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a free 15-minute call</a>
-      <a class='pill ghost' href='/contact'>Send a short enquiry</a>
+      <a class="pill" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a free 15-minute call</a>
+      <a class="pill ghost" href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank">Book a first session</a>
     </div>
   </div>
 </section>
