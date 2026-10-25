@@ -22,7 +22,6 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,900&amp;display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EKE17QFG2S');document.addEventListener('click',function(e){if(!e.target.closest)return;var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(h.indexOf('zandahealth.com')>-1){gtag('event','booking_click',{event_category:'booking',event_label:h.slice(0,100)});}else if(h.indexOf('mailto:')===0){gtag('event','email_click',{event_category:'contact',event_label:h.replace('mailto:','').split('?')[0].slice(0,100)});}else if(h.indexOf('tel:')===0){gtag('event','phone_click',{event_category:'contact',event_label:h.replace('tel:','')});}else if(h.indexOf('instagram.com')>-1){gtag('event','social_click',{event_category:'social',event_label:'instagram'});}else if(h.indexOf('preview.mailerlite.io')>-1){gtag('event','sign_up',{method:'lead_magnet'});}},true);</script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "WebPage", "name": "Privacy | Body Belonging", "description": "How personal and health information is handled when you contact or book with Body Belonging Clinic.", "url": "https://www.bodybelongingclinic.com.au/privacy", "isPartOf": {"@type": "WebSite", "name": "Body Belonging Clinic", "url": "https://www.bodybelongingclinic.com.au/"}, "publisher": {"@type": "MedicalBusiness", "@id": "https://www.bodybelongingclinic.com.au/#clinic", "name": "Body Belonging Clinic", "url": "https://www.bodybelongingclinic.com.au/"}}
 </script>
@@ -67,7 +66,7 @@
     <h3>What we collect</h3>
     <p><strong>If you become a client, or enquire about becoming one:</strong> your name, contact details and date of birth; your emergency contact; your Medicare, DVA or private health fund details; your referral and referring practitioner; <strong>health information</strong>: what you tell us in sessions, our clinical notes, assessments and questionnaires, and correspondence about your care; and payment records.</p>
     <p>Health information is <strong>sensitive information</strong> under the Privacy Act. It gets the highest level of protection, and we only collect it with your consent.</p>
-    <p><strong>If you just visit this website:</strong> pages you looked at, roughly where you are, what device you used, and how you found us, <strong>only if you accept cookies</strong>. If you decline, we don’t collect this.</p>
+    <p><strong>If you just visit this website:</strong> nothing about you. The site runs no analytics or advertising trackers and sets no tracking cookies. Our host, Netlify, keeps the standard technical logs any website needs to run.</p>
     <p><strong>If you message, comment or subscribe:</strong> your name, contact details, and whatever you chose to tell us.</p>
 
     <h3>Where we get it</h3>
@@ -109,15 +108,12 @@
     </ul>
     <p><strong>To run this website and our mailing list</strong></p>
     <ul>
-      <li><strong>Google Analytics</strong>: website usage, only if you accept cookies. <em>United States</em></li>
-      <li><strong>Meta (Instagram) Pixel</strong>: website usage, only if you accept cookies. <em>United States</em></li>
-      <li><strong>Microsoft Clarity</strong>: website usage, only if you accept cookies. <em>United States</em></li>
       <li><strong>MailerLite</strong>: our email newsletter and waitlists, only if you subscribe. <em>European Union, United States</em></li>
       <li><strong>Netlify</strong>: website hosting and enquiry forms. <em>United States</em></li>
     </ul>
     <p><strong>None of these hold your clinical records.</strong></p>
     <p><strong>Email is the one to think about.</strong> If you email us, your message is stored in our mailbox, which may sit outside Australia. That’s fine for bookings and questions. For anything detailed about your health, tell Lauren in session, or ask for a secure way to send it.</p>
-    <p><strong>You have choices.</strong> If you decline cookies, the analytics tools collect nothing. You can skip the mailing list, or unsubscribe in one click. If you’d rather not get texts or emails, tell Lauren and she’ll find another way to reach you.</p>
+    <p><strong>You have choices.</strong> This website does not track you, so there is nothing to decline. You can skip the mailing list, or unsubscribe in one click. If you’d rather not get texts or emails, tell Lauren and she’ll find another way to reach you.</p>
     <p>We say this plainly because a privacy policy that quietly omits it isn’t a privacy policy.</p>
 
     <h3>How long we keep it</h3>
@@ -149,7 +145,7 @@
     <h3>Changes to this policy</h3>
     <p>If we change this policy we’ll update the date below. If a change is significant, we’ll tell you rather than expecting you to notice.</p>
 
-    <p style="opacity:.7;font-size:.95rem">Last updated: 16 October 2026.</p>
+    <p style="opacity:.7;font-size:.95rem">Last updated: 25 October 2026.</p>
   </div>
 </section>
 </main>
@@ -238,31 +234,6 @@
   els.forEach(function(el,i){el.classList.add('reveal-init');el.style.transitionDelay=((i%5)*70)+'ms';});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('reveal-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
   els.forEach(function(el){io.observe(el);});
-})();
-</script>
-<!-- BBC consent + optional trackers (Meta Pixel, Clarity) — dormant until IDs set -->
-<div id="bbcConsent" class="consent-bar" role="dialog" aria-live="polite" aria-label="Cookie choices" hidden>
-  <p class="consent-copy">We use cookies to see how the site is used and to improve it. You can accept or decline optional analytics. See our <a href='/privacy'>privacy policy</a>.</p>
-  <div class="consent-actions">
-    <button type="button" id="bbcConsentAccept" class="pill">Accept</button>
-    <button type="button" id="bbcConsentDecline" class="pill ghost">Decline</button>
-  </div>
-</div>
-<script>
-(function(){
-  var CLARITY_ID="xi3ao44bu2";
-  function ck(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]*)');return m?m[1]:'';}
-  function setck(n,v){document.cookie=n+'='+v+';path=/;max-age=31536000;samesite=lax';}
-  function loadClarity(){ if(!/(^|\.)bodybelongingclinic\.com\.au$/i.test(location.hostname)) return; if(!CLARITY_ID||CLARITY_ID.charAt(0)==='_'||window.clarity) return;
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script",CLARITY_ID); }
-  function loadGA(){ if(window.__bbcGA) return; if(!/(^|\.)bodybelongingclinic\.com\.au$/i.test(location.hostname)) return;  window.__bbcGA=1; var s=document.createElement("script"); s.async=1; s.src="https://www.googletagmanager.com/gtag/js?id=G-EKE17QFG2S"; document.head.appendChild(s); }
-  function enable(){ loadGA(); if(window.bbcActivateMeta) window.bbcActivateMeta(); loadClarity(); }
-  var choice=ck('bbc_consent'), bar=document.getElementById('bbcConsent');
-  if(choice==='granted'){ enable(); }
-  else if(choice!=='denied' && bar){ bar.hidden=false; }
-  var a=document.getElementById('bbcConsentAccept'), d=document.getElementById('bbcConsentDecline');
-  if(a) a.addEventListener('click',function(){ setck('bbc_consent','granted'); if(bar) bar.hidden=true; enable(); });
-  if(d) d.addEventListener('click',function(){ setck('bbc_consent','denied'); if(bar) bar.hidden=true; });
 })();
 </script>
 

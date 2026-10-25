@@ -22,7 +22,6 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&amp;family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500;1,9..144,900&amp;display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EKE17QFG2S');document.addEventListener('click',function(e){if(!e.target.closest)return;var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';if(h.indexOf('zandahealth.com')>-1){gtag('event','booking_click',{event_category:'booking',event_label:h.slice(0,100)});}else if(h.indexOf('mailto:')===0){gtag('event','email_click',{event_category:'contact',event_label:h.replace('mailto:','').split('?')[0].slice(0,100)});}else if(h.indexOf('tel:')===0){gtag('event','phone_click',{event_category:'contact',event_label:h.replace('tel:','')});}else if(h.indexOf('instagram.com')>-1){gtag('event','social_click',{event_category:'social',event_label:'instagram'});}else if(h.indexOf('preview.mailerlite.io')>-1){gtag('event','sign_up',{method:'lead_magnet'});}},true);</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Can I get a Medicare rebate to see a social worker?","acceptedAnswer":{"@type":"Answer","text":"Yes. Accredited Mental Health Social Workers are recognised providers under Better Access. With a GP Mental Health Treatment Plan and a referral, eligible clients get $89.50 back per session of 50 minutes or more, the same whether the session is in person or by video."}},
@@ -255,31 +254,6 @@
   els.forEach(function(el,i){el.classList.add('reveal-init');el.style.transitionDelay=((i%5)*70)+'ms';});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('reveal-in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:0.08});
   els.forEach(function(el){io.observe(el);});
-})();
-</script>
-<!-- BBC consent + optional trackers (Meta Pixel, Clarity) — dormant until IDs set -->
-<div id="bbcConsent" class="consent-bar" role="dialog" aria-live="polite" aria-label="Cookie choices" hidden>
-  <p class="consent-copy">We use cookies to see how the site is used and to improve it. You can accept or decline optional analytics. See our <a href='/privacy'>privacy policy</a>.</p>
-  <div class="consent-actions">
-    <button type="button" id="bbcConsentAccept" class="pill">Accept</button>
-    <button type="button" id="bbcConsentDecline" class="pill ghost">Decline</button>
-  </div>
-</div>
-<script>
-(function(){
-  var CLARITY_ID="xi3ao44bu2";
-  function ck(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]*)');return m?m[1]:'';}
-  function setck(n,v){document.cookie=n+'='+v+';path=/;max-age=31536000;samesite=lax';}
-  function loadClarity(){ if(!/(^|\.)bodybelongingclinic\.com\.au$/i.test(location.hostname)) return; if(!CLARITY_ID||CLARITY_ID.charAt(0)==='_'||window.clarity) return;
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script",CLARITY_ID); }
-  function loadGA(){ if(window.__bbcGA) return; if(!/(^|\.)bodybelongingclinic\.com\.au$/i.test(location.hostname)) return;  window.__bbcGA=1; var s=document.createElement("script"); s.async=1; s.src="https://www.googletagmanager.com/gtag/js?id=G-EKE17QFG2S"; document.head.appendChild(s); }
-  function enable(){ loadGA(); if(window.bbcActivateMeta) window.bbcActivateMeta(); loadClarity(); }
-  var choice=ck('bbc_consent'), bar=document.getElementById('bbcConsent');
-  if(choice==='granted'){ enable(); }
-  else if(choice!=='denied' && bar){ bar.hidden=false; }
-  var a=document.getElementById('bbcConsentAccept'), d=document.getElementById('bbcConsentDecline');
-  if(a) a.addEventListener('click',function(){ setck('bbc_consent','granted'); if(bar) bar.hidden=true; enable(); });
-  if(d) d.addEventListener('click',function(){ setck('bbc_consent','denied'); if(bar) bar.hidden=true; });
 })();
 </script>
 

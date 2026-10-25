@@ -16,12 +16,10 @@
 # static site and cannot break rendering.
 #
 # Content-Security-Policy is deliberately set to REPORT-ONLY for now. It is
-# scoped to the third parties the site actually uses (Google Fonts, GA/GTM,
-# Microsoft Clarity, MailerLite forms, Zanda booking, Instagram embeds).
+# scoped to the third parties the site actually uses (Google Fonts,
+# MailerLite forms, Zanda booking, Instagram embeds). Analytics, Clarity and
+# the Meta pixel were removed on 25 Oct 2026: the site runs no trackers.
 # Verified against real traffic 20 Aug 2026. What the site actually loads:
-#   scripts.clarity.ms + www.clarity.ms + v.clarity.ms  (Microsoft Clarity)
-#   www.googletagmanager.com                            (GA4 G-EKE17QFG2S)
-#   connect.facebook.net + www.facebook.com/tr          (Meta pixel)
 #   fonts.googleapis.com + fonts.gstatic.com            (webfonts)
 #   clientportal.zandahealth.com                        (booking iframe)
 # All are allowed above. Watch the console for a couple of weeks, then rename
@@ -45,8 +43,8 @@
       img-src 'self' data: https:; \
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; \
       font-src 'self' https://fonts.gstatic.com data:; \
-      script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.clarity.ms https://connect.facebook.net https://preview.mailerlite.io; \
-      connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.clarity.ms https://www.facebook.com https://connect.facebook.net https://preview.mailerlite.io; \
+      script-src 'self' 'unsafe-inline' https://preview.mailerlite.io; \
+      connect-src 'self' https://preview.mailerlite.io; \
       frame-src https://clientportal.zandahealth.com https://www.instagram.com https://www.google.com"""
 
 # ---------------------------------------------------------------------------
