@@ -145,7 +145,7 @@
           <h2 class="fyc-q">How would you like to <em>start?</em></h2>
           <p class="fyc-hint">There&rsquo;s no commitment in any of these. You can change your mind after.</p>
           <div class="fyc-opts">
-            <button class="fyc-opt" data-q="start" data-v="intro_call"><span class="k">1</span><span class="txt"><b>Just a quick chat first</b><span>A free 15-minute call to ask questions. No cost, no referral, nothing to sort out beforehand.</span></span></button>
+            <button class="fyc-opt" data-q="start" data-v="intro_call"><span class="k">1</span><span class="txt"><b>Just a quick chat first</b><span>A free 15 minute chat to ask questions. No cost, no referral, nothing to sort out beforehand.</span></span></button>
             <button class="fyc-opt" data-q="start" data-v="full_session"><span class="k">2</span><span class="txt"><b>Pull up a chair</b><span>Your first session: a full 60 minutes to bring the whole story.</span></span></button>
             <button class="fyc-opt" data-q="start" data-v="read_first"><span class="k">3</span><span class="txt"><b>I&rsquo;d like to read a bit first</b><span>No booking yet. Just show me where to look.</span></span></button>
           </div>
@@ -353,13 +353,13 @@
         actions = btn(t.page, t.link + ' &rarr;') + btn('resources.html','Browse the Belonging Room','ghost');
         note = 'When you&rsquo;re ready (today, next month, next year), booking is always one click away.';
       } else if(start === 'intro_call'){
-        stepLine = 'Your next step: a free 15-minute intro call. No cost, no referral, nothing to organise first.';
-        actions = btn(bookUrl('intro_call'),'Book a free intro call &rarr;','',true) + btn(t.page,'First, read about this pathway','ghost');
-        note = pick('intro_call','Free 15-minute intro call') + 'It&rsquo;s a short call to ask questions and get a feel for the room. You don&rsquo;t need a Medicare plan, a referral, or a tidy explanation, and you&rsquo;re not committing to anything by having it.';
+        stepLine = 'Your next step: a free 15 minute intro chat. No cost, no referral, nothing to organise first.';
+        actions = btn(bookUrl('intro_call'),'Book a free intro chat &rarr;','',true) + btn(t.page,'First, read about this pathway','ghost');
+        note = pick('intro_call','Free 15 minute intro chat') + 'It&rsquo;s a short chat to ask questions and get a feel for the room. You don&rsquo;t need a Medicare plan, a referral, or a tidy explanation, and you&rsquo;re not committing to anything by having it.';
       } else if(start === 'quick_chair'){
         stepLine = 'Your next step: ask us about a Quick Chair, a short 25-minute telehealth session.';
-        actions = btn('/contact','Ask about a Quick Chair &rarr;') + btn(bookUrl('intro_call'),'Or book the free intro call','ghost',true);
-        note = 'The Quick Chair is <strong>bulk-billed for eligible clients who have a Mental Health Treatment Plan and a current referral</strong> from a GP, so there&rsquo;s nothing to pay. Because it depends on your Medicare plan, we arrange it with you rather than have you book it online. That way nobody gets a surprise. <strong>Don&rsquo;t have a plan yet?</strong> That&rsquo;s completely normal. Start with the free intro call and we&rsquo;ll help you sort the referral.';
+        actions = btn('/contact','Ask about a Quick Chair &rarr;') + btn(bookUrl('intro_call'),'Or book the free intro chat','ghost',true);
+        note = 'The Quick Chair is <strong>bulk-billed for eligible clients who have a Mental Health Treatment Plan and a current referral</strong> from a GP, so there&rsquo;s nothing to pay. Because it depends on your Medicare plan, we arrange it with you rather than have you book it online. That way nobody gets a surprise. <strong>Don&rsquo;t have a plan yet?</strong> That&rsquo;s completely normal. Start with the free intro chat and we&rsquo;ll help you sort the referral.';
       } else {
         stepLine = 'Your next step: pull up a chair. Your first session is a full 60 minutes to bring the whole story.';
         actions = btn(bookUrl('full_session'),'Pull up a chair &rarr;','',true) + btn(t.page,'First, read about this pathway','ghost');
