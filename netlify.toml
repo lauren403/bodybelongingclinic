@@ -80,6 +80,15 @@
 # paid-search test depends on. /offerings carries five booking links and the fee
 # table. /booking is the other URL people type.
   
+# /your-map is the free Your Map guide (one page, five jobs) that the Instagram
+# BRAIN reply sends. A 200 rewrite keeps the short address in the browser while
+# serving the PDF. Added 31 Oct 2026 for the Instagram launch.
+[[redirects]]
+  from = "/your-map"
+  to = "/assets/your-map.pdf"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/book"
   to = "/offerings"
