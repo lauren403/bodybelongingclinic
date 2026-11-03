@@ -311,6 +311,44 @@
   status = 301
   force = true
 
+# Six pages in the sitemap still served their .html copy with a 200 (found in
+# the Google audit, 3 Nov 2026). Same fix as above.
+[[redirects]]
+  from = "/for-gps.html"
+  to = "/for-gps"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/workcover.html"
+  to = "/workcover"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/adhd-belonging.html"
+  to = "/adhd-belonging"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-arfid-and-adhd.html"
+  to = "/belonging-room-arfid-and-adhd"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-arfid-in-adults.html"
+  to = "/belonging-room-arfid-in-adults"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/belonging-room-medicare-eating-disorder-plan.html"
+  to = "/belonging-room-medicare-eating-disorder-plan"
+  status = 301
+  force = true
+
 # GP referral letter template (moved from the ADHD hub, 21 Oct 2026). GPs import
 # it into Best Practice or MedicalDirector, so serve it as an RTF download.
 [[headers]]
