@@ -101,6 +101,8 @@ p{max-width:64ch}
 .brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;color:var(--cream);font-family:var(--serif);font-style:italic;font-weight:900;font-size:1.18rem;letter-spacing:-.01em}
 .brand-mark{width:1.7em;height:1.7em;flex:0 0 auto;display:inline-flex}
 .brand-mark img{width:100%;height:100%;display:block}
+.brand-lockup{display:block;height:42px;width:auto}
+@media(max-width:640px){.brand-lockup{height:36px}}
 .brand small{font-family:var(--sans);font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:.6rem;opacity:.8}
 .site-header nav{display:flex;align-items:center;gap:1.4rem;font-size:.92rem;color:var(--cream)}
 .site-header nav a{text-decoration:none;opacity:.92}
@@ -804,6 +806,7 @@ p,.lede,.lede-2,.hero .lede,.hero-cine .lede{text-wrap:pretty}
 .footer-grid{display:grid;grid-template-columns:1.5fr 2fr;gap:clamp(32px,5vw,72px);align-items:start;margin-top:clamp(40px,5vw,60px);padding-top:clamp(32px,4vw,48px);border-top:1px solid var(--line-light)}
 .footer-mark{display:inline-flex;align-items:center;gap:.55rem;color:var(--cream);text-decoration:none;font-family:var(--display);font-style:italic;font-weight:600;font-size:1.45rem;line-height:1}
 .footer-mark img{display:inline-block;vertical-align:middle}
+.footer-lockup{height:48px;width:auto}
 .footer-mark small{font-family:var(--label);font-style:normal;font-weight:600;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;opacity:.8}
 .footer-tag{max-width:36ch;margin:1.1rem 0 1.5rem;opacity:.85;font-size:1rem;line-height:1.55}
 .footer-contact{display:flex;flex-direction:column;gap:.5rem;align-items:flex-start}
