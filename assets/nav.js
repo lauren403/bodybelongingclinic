@@ -33,7 +33,7 @@
   function add(){
     if(document.querySelector('.sticky-book'))return;
     var d=document.createElement('div'); d.className='sticky-book';
-    d.innerHTML='<a href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank" aria-label="Book a free 15 minute chat">Book a free chat →</a>';
+    d.innerHTML='<a href="https://clientportal.zandahealth.com/clientportal/bodybelongingclinic/appointment-booking" rel="noopener" target="_blank" aria-label="Book a free chat, 15 minutes">Book a free chat →</a>';
     document.body.appendChild(d);
     /* step aside while another booking button is already on screen */
     try{
