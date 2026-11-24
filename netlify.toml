@@ -325,9 +325,29 @@
   status = 301
   force = true
 
+# ADHD Belonging was renamed "Bulk-billed ADHD sessions" on 23 Nov 2026 so it
+# no longer clashes with Body Belonging ADHD (the hub). Old links keep working.
+[[redirects]]
+  from = "/adhd-belonging"
+  to = "/bulk-billed-adhd-sessions"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/adhd-belonging.html"
-  to = "/adhd-belonging"
+  to = "/bulk-billed-adhd-sessions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/adhd-belonging-thank-you"
+  to = "/bulk-billed-adhd-sessions-thank-you"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bulk-billed-adhd-sessions.html"
+  to = "/bulk-billed-adhd-sessions"
   status = 301
   force = true
 
