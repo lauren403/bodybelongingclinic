@@ -369,6 +369,13 @@
   status = 301
   force = true
 
+# Found in the SEO audit, 27 Nov 2026: the only sitemap page whose .html copy still served a 200.
+[[redirects]]
+  from = "/mosman-park.html"
+  to = "/mosman-park"
+  status = 301
+  force = true
+
 # GP referral letter template (moved from the ADHD hub, 21 Oct 2026). GPs import
 # it into Best Practice or MedicalDirector, so serve it as an RTF download.
 [[headers]]
